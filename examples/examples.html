@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="compiled-css/examples.css" />
+    <body>
+      <div class="wrapper">
+        <header>
+        <h1>Pretty Pieces</h1>
+        <h2>A set of useful widgets for <strong>SASS</strong> that makes life on the front end a whole lot easier.</h2>
+        <hr />
+        </header>
+        <h3>Buttons</h3>
+
+        <section>
+        <a href="#" class="mega green pulsating button">Button!</a>
+        <a href="#" class="large blue button">Button!</a>
+        <a href="#" class="medium dark-gray button">Button!</a>
+        <a href="#" class="small red button">Button!</a>
+        <a href="#" class="micro purple button">Button!</a>
+
+        <pre>
+// sizes: mega, large, medium, small, micro
+&lt;a href="#" class="mega green pulsating button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large blue button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="medium dark-gray button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="small red button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="micro orange button"&gt;Button!&lt;/a&gt;
+        </pre>
+
+
+        </section>
+        <hr />
+
+        <section>
+        <h3>Inset Buttons</h3>
+        <div class="inset-button-group">
+          <a href="#" class="active">One</a>
+          <a href="#">Two</a>
+          <a href="#">Three</a>
+          <a href="#">Four</a>
+        </div>
+
+        <pre>
+&lt;div class="inset-button-group"&gt;
+  &lt;a href="#" class="active"&gt;One&lt;/a&gt;
+  &lt;a href="#"&gt;Two&lt;/a&gt;
+  &lt;a href="#"&gt;Three&lt;/a&gt;
+  &lt;a href="#"&gt;Four&lt;/a&gt;
+&lt;/div&gt;
+        </pre>
+
+        </section>
+        <hr />
+
+        <h3>Gradient Boxes</h3>
+        <section>
+        <div class="gradient-box green">
+          <h3>100</h3>
+          <small>Of Something</small>
+        </div>
+
+        <div class="gradient-box red">
+          <h3>200</h3>
+          <small>Of Something</small>
+        </div>
+
+        <div class="gradient-box blue">
+          <h3>200</h3>
+          <small>Of Something</small>
+        </div>
+
+        <div class="gradient-box purple">
+          <h3>200</h3>
+          <small>Of Something</small>
+        </div>
+
+
+        <pre>
+&lt;div class="gradient-box green"&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class="gradient-box red"&gt;
+  &lt;h3&gt;200&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class="gradient-box blue"&gt;
+  &lt;h3&gt;200&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class="gradient-box purple"&gt;
+  &lt;h3&gt;200&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+        </pre>
+        </section>
+        <hr />
+
+        <h3>Notifications</h3>
+        <section>
+        <div class="notification success">
+          <a href="#" class="close-link">Close</a>
+          <h3>Success!</h3>
+          <p>Hurray you were successful in something...finally</p>
+        </div>
+
+        <div class="notification error">
+          <a href="#" class="close-link">Close</a>
+          <h3>Fail!</h3>
+          <p>Boo you failed...typical</p>
+        </div>
+
+        <div class="notification warning">
+          <a href="#" class="close-link">Close</a>
+          <h3>Warning!</h3>
+          <p>Danger Will Robinson...danger</p>
+        </div>
+
+        <pre>
+&lt;div class="notification success"&gt;
+  &lt;a href="#" class="close-link"&gt;Close&lt;/a&gt;
+  &lt;h3&gt;Success!&lt;/h3&gt;
+  &lt;p&gt;Hurray you were successful in something...finally&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="notification error"&gt;
+  &lt;a href="#" class="close-link"&gt;Close&lt;/a&gt;
+  &lt;h3&gt;Fail!&lt;/h3&gt;
+  &lt;p&gt;Boo you failed...typical&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="notification warning"&gt;
+  &lt;a href="#" class="close-link"&gt;Close&lt;/a&gt;
+  &lt;h3&gt;Warning!&lt;/h3&gt;
+  &lt;p&gt;Danger Will Robinson...danger&lt;/p&gt;
+&lt;/div&gt;
+        
+        </pre>
+        </section>
+
+
+        <h3>Modals</h3>
+        <section>
+        <a href="#" class="large purple button" onclick="document.getElementById('modal').className += ' show';">Show Modal</a>
+        <div id="modal" class="modal ">
+          <h2>
+            I'm a kickass modal window!
+            <small>
+              <a href="#" class="cancelModal" onclick="document.getElementById('modal').className = 'modal';">X</a>
+            </h2>
+
+
+            <div class="modal-content">
+              <textarea>
+                Say something...
+              </textarea>
+              <div class="controls">
+                <a href="#" class="large purple button">Like a boss &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+&lt;a href="#" class="large purple button" onclick="console.log(document.getElementById('modal').className += ' show');"&gt;Show Modal&lt;/a&gt;
+&lt;div id="modal" class="modal "&gt;
+  &lt;h2&gt;
+    I'm a kickass modal window!
+    &lt;small&gt;
+      &lt;a href="#" class="cancelModal" onclick="document.getElementById('modal').className = 'modal';"&gt;X&lt;/a&gt;
+    &lt;/h2&gt;
+
+    &lt;div class="modal-content"&gt;
+      &lt;textarea&gt;
+        Say something...
+      &lt;/textarea&gt;
+      &lt;div class="controls"&gt;
+        &lt;a href="#" class="large purple button"&gt;Like a boss &raquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>          
+          </section>
+
+
+          <h3>Fading Labels</h3>
+          <form class="special-labels">
+            <span class="wrap">
+              <label>Name</label>
+              <input type="text" />
+            </span>
+
+            <span class="wrap">
+              <label>Email</label>
+              <input type="text" />
+            </span>
+          </form>
+
+          <pre>
+&lt;form class="special-labels"&gt;
+  &lt;span class="wrap"&gt;
+    &lt;label&gt;Name&lt;/label&gt;
+    &lt;input type="text" /&gt;
+  &lt;/span&gt;
+
+  &lt;span class="wrap"&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input type="text" /&gt;
+  &lt;/span&gt;
+&lt;/form&gt;
+          
+          </pre>
+        </div>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/util.js"></script>
+        <script type="text/javascript" src="js/noise.js"></script>
+        <script type="text/javascript" src="js/labels.js"></script>
+        <script type="text/javascript" src="js/pulsating.js"></script>
+      </body>
+    </html>

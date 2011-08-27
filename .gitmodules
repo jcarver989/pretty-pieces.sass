@@ -1,3 +1,6 @@
 [submodule "vendor/foundation.sass"]
 	path = vendor/foundation.sass
 	url = git@github.com:jcarver989/foundation.sass.git
+[submodule "vendor/state_machine.js"]
+	path = vendor/state_machine.js
+	url = git@github.com:jcarver989/state_machine.js.git
