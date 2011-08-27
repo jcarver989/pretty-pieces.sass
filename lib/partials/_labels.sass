@@ -1,0 +1,50 @@
+@import foundation/mixins.sass
+
+
+// ----------------------
+// Fading Labels on Forms
+// ----------------------
+
+.special-labels
+    span.wrap
+        :position relative
+        :display block
+        :margin 5px 0 5px 0
+        width: 100%
+
+        label
+            :position absolute
+            :top 12px
+            :left 12px
+            :color #aaa
+            :font-size 18px
+            :font-weight bold
+
+        label.faded
+            :color #ccc
+
+        input
+            :padding 12px
+            :background #fff
+            :border none
+            :font-size 16px
+            :font-weight bold
+            :width 100%
+            +border-radius(8px)
+
+        .button
+            :display block
+            :width 150px
+            :position absolute
+            :right 0
+            :top 0
+            :margin 0
+            height: 100%
+            :padding 0
+            +border-radius(6px)
+            
+            span
+                +border-radius(6px)
+                :height 100%
+                :margin-top -5px
+                :padding-top 8px

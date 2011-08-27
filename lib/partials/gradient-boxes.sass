@@ -1,0 +1,44 @@
+@import foundation/mixins.sass
+@import widgets/colors.sass
+
+= gradient-box($base-color: $green)
+  :color #fff
+  :font-size 18px
+  :text-shadow 0 -1px 1px rgba(0,0,0,.4)
+  :padding 8px 8px
+  :display inline-block
+  :zoom 1
+  :*display inline
+  :border 1px solid rgba(0,0,0,.74)
+  :text-align center
+  :margin-right 10px
+  :min-width 120px
+  :background-color $base-color
+  +border-radius(4px)
+  +inset-box-shadow(0, 1px, 0, rgba(255,255,255,.3))
+  +gradient($base-color, darken($base-color, 10%))
+  +ie-gradient(#0092ae, #00728d)
+
+  h3
+    :color #fff
+    :font-size 52px
+    :margin 0
+    :text-shadow 0 -2px 1px rgba(0,0,0,.6)
+
+  small
+    :font-weight normal
+    :color #282828
+    :font-size 18px
+    :text-shadow 0 1px 0 rgba(255,255,255,0.3)
+
+.gradient-box.green
+  +gradient-box($green)
+
+.gradient-box.blue
+  +gradient-box($blue)
+
+.gradient-box.red
+  +gradient-box($red)
+
+.gradient-box.purple
+  +gradient-box($purple)
