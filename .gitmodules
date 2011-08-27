@@ -1,0 +1,3 @@
+[submodule "vendor/foundation.sass"]
+	path = vendor/foundation.sass
+	url = git@github.com:jcarver989/foundation.sass.git
