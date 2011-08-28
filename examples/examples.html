@@ -9,31 +9,40 @@
         <h2>A set of useful widgets for <strong>SASS</strong> that makes life on the front end a whole lot easier.</h2>
         <hr />
         </header>
-        <h3>Buttons</h3>
 
-        <section>
-        <a href="#" class="mega green pulsating button">Button!</a>
-        <a href="#" class="large blue button">Button!</a>
-        <a href="#" class="medium dark-gray button">Button!</a>
-        <a href="#" class="small red button">Button!</a>
-        <a href="#" class="micro purple button">Button!</a>
-
-        <pre>
-// sizes: mega, large, medium, small, micro
-&lt;a href="#" class="mega green pulsating button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large blue button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="medium dark-gray button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="small red button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="micro orange button"&gt;Button!&lt;/a&gt;
-        </pre>
+        <div class="inset-button-group green" id="menu">
+          <a href="#" class="active" data-item="buttons">Buttons</a>
+          <a href="#" data-item="gradients">Gradient Boxes</a>
+          <a href="#" data-item="notifications">Notifications</a>
+          <a href="#" data-item="modals">Modals</a>
+          <a href="#" data-item="forms">Forms</a>
+          <a href="#" data-item="search">Search boxes</a>
+        </div>
 
 
-        </section>
-        <hr />
+        <div id="buttons">
+          <h3>Buttons</h3>
+          <section>
+          <a href="#" class="mega purple pulsating button">Button!</a>
+          <a href="#" class="large blue button">Button!</a>
+          <a href="#" class="medium dark-gray button">Button!</a>
+          <a href="#" class="small red button">Button!</a>
+          <a href="#" class="micro green button">Button!</a>
+
+          <pre>
+  // sizes: mega, large, medium, small, micro
+  &lt;a href="#" class="mega green pulsating button"&gt;Button!&lt;/a&gt;
+  &lt;a href="#" class="large blue button"&gt;Button!&lt;/a&gt;
+  &lt;a href="#" class="medium dark-gray button"&gt;Button!&lt;/a&gt;
+  &lt;a href="#" class="small red button"&gt;Button!&lt;/a&gt;
+  &lt;a href="#" class="micro orange button"&gt;Button!&lt;/a&gt;
+          </pre>
+          </section>
+          <hr />
 
         <section>
         <h3>Inset Buttons</h3>
-        <div class="inset-button-group">
+        <div class="inset-button-group blue">
           <a href="#" class="active">One</a>
           <a href="#">Two</a>
           <a href="#">Three</a>
@@ -52,6 +61,9 @@
         </section>
         <hr />
 
+        </div>
+
+        <div id="gradients" style="display:none;">
         <h3>Gradient Boxes</h3>
         <section>
         <div class="gradient-box green">
@@ -98,7 +110,10 @@
         </pre>
         </section>
         <hr />
+      </div>
 
+
+        <div id="notifications" style="display:none;">
         <h3>Notifications</h3>
         <section>
         <div class="notification success">
@@ -141,7 +156,9 @@
         </pre>
         </section>
 
+      </div>
 
+        <div id="modals" style="display:none;">
         <h3>Modals</h3>
         <section>
         <a href="#" class="large purple button" onclick="document.getElementById('modal').className += ' show';">Show Modal</a>
@@ -184,6 +201,10 @@
 </pre>          
           </section>
 
+        </div>
+
+
+        <div id="forms" style="display:none;">
 
           <h3>Fading Labels</h3>
           <form class="special-labels">
@@ -212,13 +233,67 @@
 &lt;/form&gt;
           
           </pre>
+
+
+          </div>
+
+
+          <div id="search" style="display:none;">
+          <section>
+          <h3>Search Boxes</h3>
+            <div class="search dark expanding">
+              <input type="text" value="enter search here..." />
+              <span class="icon blue"></span>
+            </div>
+
+            <div class="search dark expanding">
+              <input type="text" value="enter search here..." />
+              <span class="icon green"></span>
+            </div>
+
+            <div class="search light expanding">
+              <input type="text" value="enter search here..." />
+              <span class="icon red"></span>
+            </div>
+
+          </section>
+
+        </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
         <script type="text/javascript" src="js/util.js"></script>
+        <script type="text/javascript" src="js/searchboxes.js"></script>
         <script type="text/javascript" src="js/noise.js"></script>
         <script type="text/javascript" src="js/labels.js"></script>
         <script type="text/javascript" src="js/pulsating.js"></script>
+
+
+        <script type="text/javascript">
+          $("#menu").click(function(e) {
+              e.preventDefault()
+              var active = $("#menu .active")
+              active.removeClass("active")
+
+              var target = $(e.target)
+              target.addClass("active")
+
+              var show = "#" + target.attr("data-item")
+              var hide_id = "#" + active.attr("data-item")
+              switch_divs($(hide_id), $(show))
+          })
+
+          function switch_divs(hide, show) {
+            hide.slideUp(200)
+            show.show()
+          }
+        </script>
+
       </body>
     </html>

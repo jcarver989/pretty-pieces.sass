@@ -442,48 +442,6 @@ button.button {
 .button.inactive {
   cursor: default; }
 
-.inset-button-group:after {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  clear: both; }
-.inset-button-group a {
-  display: block;
-  float: left;
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-  background-color: #7c9f1f;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
-  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent; }
-  .inset-button-group a:hover {
-    background-color: #9dca27; }
-  .inset-button-group a:first-child {
-    border-left: none;
-    -moz-border-radius: 8px 0 0 8px;
-    -webkit-border-radius: 8px 0 0 8px;
-    border-radius: 8px 0 0 8px; }
-  .inset-button-group a:last-child {
-    border-right: none;
-    -moz-border-radius: 0 8px 8px 0px;
-    -webkit-border-radius: 0 8px 8px 0px;
-    border-radius: 0 8px 8px 0px; }
-  .inset-button-group a.active, .inset-button-group a:active {
-    background-color: #7c9f1f;
-    -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
-    border-right: 1px solid rgba(255, 255, 255, 0.05); }
-
 .mega.button {
   font-size: 26px;
   -moz-border-radius: 20px 20px 20px 20px;
@@ -870,7 +828,7 @@ h3 {
   text-shadow: 0 1px 0px rgba(0, 0, 0, 0.6); }
 
 .wrapper {
-  width: 700px;
+  width: 850px;
   margin: 0 auto; }
 
 hr {
@@ -895,3 +853,145 @@ pre {
   font-family: "Monaco", Courier New, monospace;
   line-height: 20px;
   background-color: rgba(0, 0, 0, 0.3); }
+
+.search {
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  position: relative;
+  width: 200px;
+  min-height: 35px;
+  margin: 5px 0 5px; }
+  .search .icon {
+    -moz-border-radius: 0 4px 4px 0;
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    -moz-box-shadow: inset 0 15px 3px rgba(255, 255, 255, 0.12), inset 0 -10px 4px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 15px 3px rgba(255, 255, 255, 0.12), inset 0 -10px 4px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: inset 0 15px 3px rgba(255, 255, 255, 0.12), inset 0 -10px 4px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26px;
+    height: 27px;
+    padding: 5px;
+    background: url("../images/search-dark.png") no-repeat 5px 5px;
+    display: block;
+    border: none;
+    cursor: pointer; }
+    .search .icon.blue {
+      background-color: #0070c3; }
+    .search .icon.green {
+      background-color: #7c9f1f; }
+    .search .icon.red {
+      background-color: #ae1919; }
+  .search input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    padding-left: 10px;
+    line-height: 30px;
+    outline: none; }
+  .search.dark {
+    background-color: #222222;
+    -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: none; }
+    .search.dark input {
+      color: white; }
+  .search.light {
+    background-color: #eeeeee; }
+    .search.light input {
+      color: #333333; }
+    .search.light .icon {
+      background-image: url("../images/search-light.png"); }
+
+.inset-button-group {
+  margin-top: 20px; }
+  .inset-button-group.blue:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .inset-button-group.blue a {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding: 6.667px 20px;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    background-color: #00a8de;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent; }
+    .inset-button-group.blue a:hover {
+      background-color: #12c5ff; }
+    .inset-button-group.blue a:first-child {
+      border-left: none;
+      -moz-border-radius: 5px 0 0 5px;
+      -webkit-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .inset-button-group.blue a:last-child {
+      border-right: none;
+      -moz-border-radius: 0 5px 5px 0px;
+      -webkit-border-radius: 0 5px 5px 0px;
+      border-radius: 0 5px 5px 0px; }
+    .inset-button-group.blue a.active, .inset-button-group.blue a:active {
+      background-color: #00a8de;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
+      background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+      border-right: 1px solid rgba(255, 255, 255, 0.05); }
+  .inset-button-group.green:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .inset-button-group.green a {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding: 6.667px 20px;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    background-color: #7c9f1f;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent; }
+    .inset-button-group.green a:hover {
+      background-color: #9dca27; }
+    .inset-button-group.green a:first-child {
+      border-left: none;
+      -moz-border-radius: 5px 0 0 5px;
+      -webkit-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .inset-button-group.green a:last-child {
+      border-right: none;
+      -moz-border-radius: 0 5px 5px 0px;
+      -webkit-border-radius: 0 5px 5px 0px;
+      border-radius: 0 5px 5px 0px; }
+    .inset-button-group.green a.active, .inset-button-group.green a:active {
+      background-color: #7c9f1f;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
+      background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+      border-right: 1px solid rgba(255, 255, 255, 0.05); }
