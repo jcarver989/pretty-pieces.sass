@@ -1,32 +1,49 @@
+= modal-highlight($color: rgba(255,255,255,0.3))
+    border: 1px solid $color
+
 .modal
     :position absolute 
-    :top 100px
+    :top 0px
     :left 30%
     :width 504px
     :padding 10px
     :border 1px solid rgba(0,0,0,.3)
     :border-bottom 1px solid rgba(0,0,0,.5)
     :text-shadow 0 -1px 0px rgba(0,0,0,.4)
-    +border-radius(3px)
-    +box-shadow(0, 2px, 3px, rgba(0,0,0,.6) )
-    :font-size 12px
+    :font-size 14px
     :color #444
-    :opacity 0
-    :background #333 
-    :background rgba(0,0,0,.8)
-    :z-index -1
+    :z-index 900
+    :display none
+    +box-shadow(0 2px 3px rgba(0,0,0,.3))
+    +border-radius(3px)
 
+
+
+    &.transparent.black
+        :background rgba(0,0,0,.8)
+
+    &.transparent.green
+        :background fade-out($green, 0.2)
+        +modal-highlight()
+
+    &.transparent.blue
+        :background fade-out($blue, 0.2)
+        +modal-highlight()
+    
+    &.transparent.red
+        :background fade-out($red, 0.2)
+        +modal-highlight()
 
     .modal-content
         :text-shadow none
 
     
     &.show
-        :z-index 900
-        :opacity 1
+        :display block
     
     h2
         :font-size 18px
+        :margin 0
         :margin-bottom 5px
         :position relative
         :color #fff
@@ -38,17 +55,13 @@
 
             .cancelModal
                 :color #fff
-                :padding 3px 6px 2px
                 :font-size 12px
-                :background rgba(0,0,0,.3)
                 :text-decoration none
                 :display block
                 :float left
                 :font-weight bold
-                +border-radius(3px)
 
                 &:hover
-                    :background rgba(0,0,0,.4)
       
     h3
         :margin-top 10px
@@ -76,7 +89,57 @@
 
     .modal-content
         :background #fff
-        :padding 10px
+        :padding 10px 10px 30px 10px
         :position relative
         :min-height 130px
         +border-radius(2px)
+
+    &.solid
+        +border-radius(6px)
+        :border 1px solid rgba(0,0,0,.4)
+        :color #333
+        :text-shadow none
+
+        &.gray
+            :background $light-gray 
+
+        &.green
+            :background lighten($green, 50%)
+
+        &.blue
+            :background lighten($blue, 50%)
+
+        &.red
+            :background lighten($red, 50%)
+
+        .cancelModal
+            :color transparent 
+            :background url(../images/close.png) top left no-repeat
+            :width 36px
+            :height 36px
+
+        hr
+            :border none
+            :height 0px
+            :color transparent
+            :border-top 1px solid rgba(0,0,0,.2)
+            :border-bottom 1px solid rgba(255,255,255,.4)
+
+        h2
+            :color rgba(0,0,0,.8) 
+            :text-shadow none
+            :font-weight bold
+            :font-size 22px
+
+            small
+                :top -22px
+                :right -25px
+        
+
+        .modal-content
+            :background transparent
+            :padding 0 0 30px 0
+
+        .controls
+            :right 0
+            :bottom 0

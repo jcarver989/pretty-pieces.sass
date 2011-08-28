@@ -6,8 +6,12 @@
     span.wrap
         :position relative
         :display block
-        :margin 5px 0 5px 0
-        width: 100%
+        :margin 5px 0 10px 0
+        :width 100%
+        :overflow hidden
+        :border 1px solid rgba(0,0,0,.1)
+        :background #fff
+        +border-radius(8px)
 
         label
             :position absolute
@@ -21,13 +25,12 @@
             :color #ccc
 
         input
-            :padding 12px
-            :background #fff
+            :padding 12px 0 12px 12px
+            :background transparent
             :border none
             :font-size 16px
             :font-weight bold
             :width 100%
-            +border-radius(8px)
 
         .button
             :display block

@@ -360,9 +360,9 @@
   display: inline-block;
   zoom: 1;
   *display: inline;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent;
@@ -432,6 +432,48 @@
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(255, 255, 255, 0.1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(255, 255, 255, 0.1); }
 
+.gray.button {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.4), inset 1px 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.2)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#eeeeee', endColorstr='#d4d4d4');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#d4d4d4')";
+  background-color: #eeeeee;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: none;
+  color: white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0px;
+  cursor: pointer;
+  outline: none;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  padding: 6px 15px 7px 15px;
+  color: #555555;
+  text-shadow: none; }
+  .gray.button:hover {
+    background-color: white; }
+  .gray.button:active {
+    background-color: #eeeeee; }
+  .gray.button:active, .gray.button.active {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(0, 0, 0, 0.3), inset 1px 0 0 rgba(255, 255, 255, 0.1); }
+  .gray.button:hover {
+    color: #888888; }
+
 button.button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.2)));
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2)); }
@@ -442,11 +484,19 @@ button.button {
 .button.inactive {
   cursor: default; }
 
+.button.pill {
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 30px 30px; }
+.button.square {
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px; }
+.button.bordered {
+  border: 5px solid rgba(0, 0, 0, 0.5); }
+
 .mega.button {
-  font-size: 26px;
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-  border-radius: 20px 20px 20px 20px; }
+  font-size: 26px; }
 
 .large.button {
   font-size: 20px; }
@@ -460,8 +510,14 @@ button.button {
 .special-labels span.wrap {
   position: relative;
   display: block;
-  margin: 5px 0 5px 0;
-  width: 100%; }
+  margin: 5px 0 10px 0;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px; }
   .special-labels span.wrap label {
     position: absolute;
     top: 12px;
@@ -472,15 +528,12 @@ button.button {
   .special-labels span.wrap label.faded {
     color: #cccccc; }
   .special-labels span.wrap input {
-    padding: 12px;
-    background: white;
+    padding: 12px 0 12px 12px;
+    background: transparent;
     border: none;
     font-size: 16px;
     font-weight: bold;
-    width: 100%;
-    -moz-border-radius: 8px 8px 8px 8px;
-    -webkit-border-radius: 8px 8px 8px 8px;
-    border-radius: 8px 8px 8px 8px; }
+    width: 100%; }
   .special-labels span.wrap .button {
     display: block;
     width: 150px;
@@ -503,32 +556,41 @@ button.button {
 
 .modal {
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 30%;
   width: 504px;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  color: #444444;
+  z-index: 900;
+  display: none;
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
-  border-radius: 3px 3px 3px 3px;
-  -moz-box-shadow: 0, 2px, 3px, rgba(0, 0, 0, 0.6), 0 0 0 transparent;
-  -webkit-box-shadow: 0, 2px, 3px, rgba(0, 0, 0, 0.6), 0 0 0 transparent;
-  box-shadow: 0, 2px, 3px, rgba(0, 0, 0, 0.6), 0 0 0 transparent;
-  font-size: 12px;
-  color: #444444;
-  opacity: 0;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: -1; }
+  border-radius: 3px 3px 3px 3px; }
+  .modal.transparent.black {
+    background: rgba(0, 0, 0, 0.8); }
+  .modal.transparent.green {
+    background: rgba(124, 159, 31, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3); }
+  .modal.transparent.blue {
+    background: rgba(0, 112, 195, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3); }
+  .modal.transparent.red {
+    background: rgba(174, 25, 25, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3); }
   .modal .modal-content {
     text-shadow: none; }
   .modal.show {
-    z-index: 900;
-    opacity: 1; }
+    display: block; }
   .modal h2 {
     font-size: 18px;
+    margin: 0;
     margin-bottom: 5px;
     position: relative;
     color: white; }
@@ -538,18 +600,11 @@ button.button {
       top: 0; }
       .modal h2 small .cancelModal {
         color: white;
-        padding: 3px 6px 2px;
         font-size: 12px;
-        background: rgba(0, 0, 0, 0.3);
         text-decoration: none;
         display: block;
         float: left;
-        font-weight: bold;
-        -moz-border-radius: 3px 3px 3px 3px;
-        -webkit-border-radius: 3px 3px 3px 3px;
-        border-radius: 3px 3px 3px 3px; }
-        .modal h2 small .cancelModal:hover {
-          background: rgba(0, 0, 0, 0.4); }
+        font-weight: bold; }
   .modal h3 {
     margin-top: 10px;
     font-size: 16px; }
@@ -574,12 +629,52 @@ button.button {
     bottom: 10px; }
   .modal .modal-content {
     background: white;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     position: relative;
     min-height: 130px;
     -moz-border-radius: 2px 2px 2px 2px;
     -webkit-border-radius: 2px 2px 2px 2px;
     border-radius: 2px 2px 2px 2px; }
+  .modal.solid {
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: #333333;
+    text-shadow: none; }
+    .modal.solid.gray {
+      background: #eeeeee; }
+    .modal.solid.green {
+      background: #e8f4c9; }
+    .modal.solid.blue {
+      background: #c3e5ff; }
+    .modal.solid.red {
+      background: #f8cece; }
+    .modal.solid .cancelModal {
+      color: transparent;
+      background: url(../images/close.png) top left no-repeat;
+      width: 36px;
+      height: 36px; }
+    .modal.solid hr {
+      border: none;
+      height: 0px;
+      color: transparent;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+    .modal.solid h2 {
+      color: rgba(0, 0, 0, 0.8);
+      text-shadow: none;
+      font-weight: bold;
+      font-size: 22px; }
+      .modal.solid h2 small {
+        top: -22px;
+        right: -25px; }
+    .modal.solid .modal-content {
+      background: transparent;
+      padding: 0 0 30px 0; }
+    .modal.solid .controls {
+      right: 0;
+      bottom: 0; }
 
 .notification {
   font-size: 20px;
@@ -788,10 +883,7 @@ button.button {
 
 html {
   margin: 0;
-  padding: 0;
-  -moz-box-shadow: inset 0 20px 300px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: inset 0 20px 300px rgba(0, 0, 0, 0.4);
-  box-sahdow: inset 0 20px 300px rgba(0, 0, 0, 0.4); }
+  padding: 0; }
 
 body, h1, h2 {
   margin: 0;
@@ -812,7 +904,6 @@ h1 {
   color: white;
   font-size: 50px;
   margin: 40px 0 30px 0;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
   letter-spacing: -2px; }
 
 h2 {
@@ -889,7 +980,6 @@ pre {
     width: 100%;
     height: 35px;
     background: transparent;
-    border: none;
     padding-left: 10px;
     line-height: 30px;
     outline: none; }
@@ -927,14 +1017,14 @@ pre {
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1p solid rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-    background-color: #00a8de;
+    background-color: #0070c3;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
     background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent; }
     .inset-button-group.blue a:hover {
-      background-color: #12c5ff; }
+      background-color: #008df6; }
     .inset-button-group.blue a:first-child {
       border-left: none;
       -moz-border-radius: 5px 0 0 5px;
@@ -946,7 +1036,7 @@ pre {
       -webkit-border-radius: 0 5px 5px 0px;
       border-radius: 0 5px 5px 0px; }
     .inset-button-group.blue a.active, .inset-button-group.blue a:active {
-      background-color: #00a8de;
+      background-color: #0070c3;
       -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
@@ -989,6 +1079,177 @@ pre {
       border-radius: 0 5px 5px 0px; }
     .inset-button-group.green a.active, .inset-button-group.green a:active {
       background-color: #7c9f1f;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
+      background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+      border-right: 1px solid rgba(255, 255, 255, 0.05); }
+  .inset-button-group.red:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .inset-button-group.red a {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding: 6.667px 20px;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    background-color: #ae1919;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent; }
+    .inset-button-group.red a:hover {
+      background-color: #db1f1f; }
+    .inset-button-group.red a:first-child {
+      border-left: none;
+      -moz-border-radius: 5px 0 0 5px;
+      -webkit-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .inset-button-group.red a:last-child {
+      border-right: none;
+      -moz-border-radius: 0 5px 5px 0px;
+      -webkit-border-radius: 0 5px 5px 0px;
+      border-radius: 0 5px 5px 0px; }
+    .inset-button-group.red a.active, .inset-button-group.red a:active {
+      background-color: #ae1919;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
+      background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+      border-right: 1px solid rgba(255, 255, 255, 0.05); }
+  .inset-button-group.purple:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .inset-button-group.purple a {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding: 6.667px 20px;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    background-color: #933ad1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent; }
+    .inset-button-group.purple a:hover {
+      background-color: #aa63db; }
+    .inset-button-group.purple a:first-child {
+      border-left: none;
+      -moz-border-radius: 5px 0 0 5px;
+      -webkit-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .inset-button-group.purple a:last-child {
+      border-right: none;
+      -moz-border-radius: 0 5px 5px 0px;
+      -webkit-border-radius: 0 5px 5px 0px;
+      border-radius: 0 5px 5px 0px; }
+    .inset-button-group.purple a.active, .inset-button-group.purple a:active {
+      background-color: #933ad1;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
+      background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+      border-right: 1px solid rgba(255, 255, 255, 0.05); }
+  .inset-button-group.gray:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .inset-button-group.gray a {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding: 6.667px 20px;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    background-color: #eeeeee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent; }
+    .inset-button-group.gray a:hover {
+      background-color: white; }
+    .inset-button-group.gray a:first-child {
+      border-left: none;
+      -moz-border-radius: 5px 0 0 5px;
+      -webkit-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .inset-button-group.gray a:last-child {
+      border-right: none;
+      -moz-border-radius: 0 5px 5px 0px;
+      -webkit-border-radius: 0 5px 5px 0px;
+      border-radius: 0 5px 5px 0px; }
+    .inset-button-group.gray a.active, .inset-button-group.gray a:active {
+      background-color: #eeeeee;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
+      background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+      border-right: 1px solid rgba(255, 255, 255, 0.05); }
+  .inset-button-group.gray a {
+    color: #333333;
+    text-shadow: none; }
+  .inset-button-group.dark-gray:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .inset-button-group.dark-gray a {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding: 6.667px 20px;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    background-color: #333333;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent; }
+    .inset-button-group.dark-gray a:hover {
+      background-color: #4d4d4d; }
+    .inset-button-group.dark-gray a:first-child {
+      border-left: none;
+      -moz-border-radius: 5px 0 0 5px;
+      -webkit-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .inset-button-group.dark-gray a:last-child {
+      border-right: none;
+      -moz-border-radius: 0 5px 5px 0px;
+      -webkit-border-radius: 0 5px 5px 0px;
+      border-radius: 0 5px 5px 0px; }
+    .inset-button-group.dark-gray a.active, .inset-button-group.dark-gray a:active {
+      background-color: #333333;
       -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;

@@ -1,8 +1,21 @@
+// ---------------------------------------
+// OPTIONS 
+// ---------------------------------------
+$default-roundness: 12px
+$square-roundness: 3px
+$pill-roundness: 30px 
+
+$default-color: $green
+$default-font-size: 14px
+
+
+$border-thickness: 5px
+$border-transparency: 0.5
 
 // ---------------------------------------
 // BASE STYLES
 // ---------------------------------------
-= button($roundness: 6px, $base-color: $green, $font-size: 14px)
+= button($base-color: $default-color, $roundness: $default-roundness,  $font-size: $default-font-size)
     +inline-block
     +border-radius($roundness)
     +stroke-with-shadow()
@@ -26,7 +39,7 @@
         +gradient(rgba(0,0,0,.3), rgba(0,0,0,.2))
         +box-shadow(0px 1px 3px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,0.1),inset 0 3px 3px rgba(0,0,0,0.4), inset 0 -1px 0 rgba(0,0,0,.3), inset 1px 0 0 rgba(255,255,255,0.1), inset -1px 0 0 rgba(255,255,255,0.1))
 
-= inset-button-group($roundness: 6px, $base-color: $green, $font-size: 14px)
+= inset-button-group($roundness: $default-roundness, $base-color: $default-color, $font-size: $default-font-size)
     +float-clear()
 
     a
@@ -61,28 +74,37 @@
             :border-right 1px solid rgba(255,255,255,0.05)
 
 .blue.button
-    +button(12px, $blue, 14px)
+    +button($blue)
 
 .light-blue.button
-    +button(12px, $light-blue, 14px)
+    +button($light-blue)
 
 .green.button
-    +button(12px, $green, 14px)
+    +button($green)
 
 .orange.button
-    +button(12px, $orange, 14px)
+    +button($orange)
 
 .red.button
-    +button(12px, $red, 14px)
+    +button($red)
 
 .purple.button
-    +button(3px, $purple, 14px)
+    +button($purple)
 
 .dark-gray.button
-    +button(12px, $dark-gray, 14px)
+    +button($dark-gray)
+
+.gray.button
+    +button($light-gray)
+    :color #555
+    :text-shadow none
+
+    &:hover
+        :color #888
 
 button.button
     +gradient(rgba(255,255,255,.1), rgba(0,0,0,.20) )
+
 
 .button:hover
     :color #fff
@@ -90,6 +112,16 @@ button.button
 .button.inactive
     :cursor default
 
+// ---------------------------------------
+// Pill Buttons 
+// ---------------------------------------
+.button
+    &.pill
+        +border-radius($pill-roundness)
+    &.square
+        +border-radius($square-roundness)
+    &.bordered
+        :border $border-thickness solid fade-out(#000, $border-transparency)
 
 
 // ---------------------------------------
@@ -98,7 +130,6 @@ button.button
 
 .mega.button
     :font-size    26px
-    +border-radius(20px)
 
 .large.button
     :font-size    20px

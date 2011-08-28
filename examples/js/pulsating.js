@@ -9,8 +9,7 @@ function updateGlow(obj,blur_size) {
 }
 
 // Recursive Function
-function glow(options) {
-
+function glow(options, timeout) {
     var defaults = {
             blur_size : 0,         // size the blur starts at
             max_blur_size : 50,    // size in pixles that the blur ends at
@@ -19,9 +18,7 @@ function glow(options) {
             direction : 'increasing'
     };
 
-    var opts        = $.extend(defaults,options);
-    var timeout_ids = opts['timeout_ids'];
-    var index       = opts['index'];
+    var opts = $.extend(defaults,options);
 
     // Change Direction of blur
     if      ( opts['blur_size'] >= opts['max_blur_size'] ) { opts['direction'] = 'decreasing'; }
@@ -32,17 +29,15 @@ function glow(options) {
     else                                     { opts['blur_size'] -= opts['blur_step']; }
 
     updateGlow(opts['obj'], opts['blur_size']);
-    timeout_ids[index] = setTimeout( function() { glow(opts); },opts['animation_speed']);
+    timeout = setTimeout( function() { glow(opts); },opts['animation_speed']);
+    return timeout
 }
 
 $(document).ready(function() {
-   var timeout_ids = {};
-
    $(".pulsating").each( function(index,item) {
-        var obj = $(item);
-        glow({'obj': obj, 'timeout_ids' : timeout_ids, 'index' : index});
+      var t;
+      glow({obj: $(item)}, t);
    });
-
 });
 
 

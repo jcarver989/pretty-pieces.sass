@@ -3,7 +3,6 @@
 html
   margin: 0
   padding: 0
-  +inset-box-shadow(0, 20px, 300px, rgba(0,0,0,.4))
 
 body, h1, h2 
   margin: 0
@@ -22,7 +21,6 @@ h1
   color: #fff 
   font-size: 50px
   margin: 40px 0 30px 0
-  text-shadow: 0 1px 1px rgba(0,0,0,0.6)
   letter-spacing: -2px
 
 h2
@@ -94,7 +92,6 @@ pre
     width: 100%
     height: 35px 
     background: transparent
-    border: none
     padding-left: 10px
     line-height: 30px
     outline: none
@@ -122,6 +119,17 @@ pre
 .inset-button-group
   margin-top: 20px
   &.blue
-    +inset-button-group(5px, $light-blue, 20px)
+    +inset-button-group(5px, $blue, 20px)
   &.green
     +inset-button-group(5px, $green, 20px)
+  &.red
+    +inset-button-group(5px, $red, 20px)
+  &.purple
+    +inset-button-group(5px, $purple, 20px)
+  &.gray
+    +inset-button-group(5px, $light-gray, 20px)
+    a
+      :color #333
+      :text-shadow none
+  &.dark-gray
+    +inset-button-group(5px, $dark-gray, 20px)
