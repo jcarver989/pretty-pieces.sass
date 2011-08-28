@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="compiled-css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="syntax.css" />
     <body>
       <div class="wrapper">
         <header>
@@ -16,8 +17,8 @@
           <a href="#" data-item="notifications">Notifications</a>
           <a href="#" data-item="modals">Modals</a>
           <a href="#" data-item="forms">Forms</a>
-          <a href="#" data-item="search">Search boxes</a>
-          <a href="#" data-item="progress bars">Search</a>
+          <a href="#" data-item="search">Search </a>
+          <a href="#" data-item="progress">Progress</a>
         </div>
 
 
@@ -26,6 +27,7 @@
 
 
           <h3>Pill Buttons</h3>
+          <hr />
           <section>
           <a href="#" class="mega purple pill button">Button!</a>
           <a href="#" class="large pill blue button">Button!</a>
@@ -34,21 +36,23 @@
           <a href="#" class="micro pill green button">Button!</a>
 
           <pre>
+          <code>
   // sizes: mega, large, medium, small, micro
   &lt;a href="#" class="mega green pulsating button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="large blue button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="medium dark-gray button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="small red button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="micro orange button"&gt;Button!&lt;/a&gt;
+          </code>
           </pre>
           </section>
-          <hr />
 
           <section>
 
 
 
           <h3>Square Buttons</h3>
+          <hr />
           <section>
           <a href="#" class="mega purple square button">Button!</a>
           <a href="#" class="large square blue button">Button!</a>
@@ -57,20 +61,22 @@
           <a href="#" class="micro square green button">Button!</a>
 
           <pre>
+          <code>
   // sizes: mega, large, medium, small, micro
   &lt;a href="#" class="mega green pulsating button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="large blue button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="medium dark-gray button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="small red button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="micro orange button"&gt;Button!&lt;/a&gt;
+          </code>
           </pre>
           </section>
-          <hr />
 
           <section>
 
 
           <h3>Bordered Buttons</h3>
+          <hr />
           <section>
           <a href="#" class="mega pill purple bordered button">Button!</a>
           <a href="#" class="large pill bordered blue button">Button!</a>
@@ -79,19 +85,21 @@
           <a href="#" class="micro square bordered green button">Button!</a>
 
           <pre>
+          <code>
   // sizes: mega, large, medium, small, micro
   &lt;a href="#" class="mega green pulsating button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="large blue button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="medium dark-gray button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="small red button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="micro orange button"&gt;Button!&lt;/a&gt;
+          </code>
           </pre>
           </section>
-          <hr />
 
           <section>
 
           <h3>Glowing Buttons</h3>
+          <hr />
           <section>
           <a href="#" class="mega purple pulsating button">Button!</a>
           <a href="#" class="large blue pulsating button">Button!</a>
@@ -100,16 +108,18 @@
           <a href="#" class="micro green pulsating button">Button!</a>
 
           <pre>
+          <code>
   // sizes: mega, large, medium, small, micro
   &lt;a href="#" class="mega green pulsating button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="large blue button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="medium dark-gray button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="small red button"&gt;Button!&lt;/a&gt;
   &lt;a href="#" class="micro orange button"&gt;Button!&lt;/a&gt;
+          </code>
           </pre>
           </section>
-          <hr />
           <h3>Inset Buttons</h3>
+          <hr />
           <div class="inset-button-group purple">
             <a href="#" class="active">One</a>
             <a href="#">Two</a>
@@ -155,16 +165,17 @@
             <a href="#">Four</a>
         </div>
           <pre>
+          <code>
 &lt;div class="inset-button-group"&gt;
   &lt;a href="#" class="active"&gt;One&lt;/a&gt;
   &lt;a href="#"&gt;Two&lt;/a&gt;
   &lt;a href="#"&gt;Three&lt;/a&gt;
   &lt;a href="#"&gt;Four&lt;/a&gt;
 &lt;/div&gt;
+        </code>
         </pre>
 
           </section>
-          <hr />
 
 
 
@@ -172,6 +183,7 @@
 
         <div id="gradients" style="display:none;">
           <h3>Gradient Boxes</h3>
+          <hr />
           <section>
           <div class="gradient-box green">
             <h3>100</h3>
@@ -194,7 +206,13 @@
           </div>
 
 
+          <div class="gradient-box gray">
+            <h3>200</h3>
+            <small>Of Something</small>
+          </div>
+
           <pre>
+          <code>
 &lt;div class="gradient-box green"&gt;
   &lt;h3&gt;100&lt;/h3&gt;
   &lt;small&gt;Of Something&lt;/small&gt;
@@ -214,9 +232,64 @@
   &lt;h3&gt;200&lt;/h3&gt;
   &lt;small&gt;Of Something&lt;/small&gt;
 &lt;/div&gt;
+        </code>
+        </pre>
+
+
+        <h3>Striped Gradient Boxes</h3>
+          <hr />
+          <section>
+          <div class="gradient-box striped green">
+            <h3>100</h3>
+            <small>Of Something</small>
+          </div>
+
+          <div class="gradient-box red striped">
+            <h3>200</h3>
+            <small>Of Something</small>
+          </div>
+
+          <div class="gradient-box blue striped">
+            <h3>200</h3>
+            <small>Of Something</small>
+          </div>
+
+          <div class="gradient-box purple striped">
+            <h3>200</h3>
+            <small>Of Something</small>
+          </div>
+          
+          <div class="gradient-box gray striped">
+            <h3>200</h3>
+            <small>Of Something</small>
+          </div>
+
+
+
+          <pre>
+          <code>
+&lt;div class="gradient-box green"&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class="gradient-box red"&gt;
+  &lt;h3&gt;200&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class="gradient-box blue"&gt;
+  &lt;h3&gt;200&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class="gradient-box purple"&gt;
+  &lt;h3&gt;200&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+        </code>
         </pre>
           </section>
-          <hr />
         </div>
 
 
@@ -242,6 +315,7 @@
           </div>
 
           <pre>
+          <code>
 &lt;div class="notification success"&gt;
   &lt;a href="#" class="close-link"&gt;Close&lt;/a&gt;
   &lt;h3&gt;Success!&lt;/h3&gt;
@@ -260,6 +334,7 @@
   &lt;p&gt;Danger Will Robinson...danger&lt;/p&gt;
 &lt;/div&gt;
 
+        </code>
         </pre>
           </section>
 
@@ -267,11 +342,55 @@
 
         <div id="modals" style="display:none;">
           <h3>Transparent Modals</h3>
+          <hr />
           <section>
-          <a href="#" class="large dark-gray button show-modal" data-modal="modal1">Show Modal</a>
-          <a href="#" class="large green button show-modal" data-modal="modal2">Show Modal</a>
-          <a href="#" class="large blue button show-modal" data-modal="modal3">Show Modal</a>
-          <a href="#" class="large red button show-modal" data-modal="modal4">Show Modal</a>
+          <a href="#" class="large square gray button show-modal" data-modal="modal0">Show Modal</a>
+          <a href="#" class="large square dark-gray button show-modal" data-modal="modal1">Show Modal</a>
+          <a href="#" class="large square green button show-modal" data-modal="modal2">Show Modal</a>
+          <a href="#" class="large square blue button show-modal" data-modal="modal3">Show Modal</a>
+          <a href="#" class="large square red button show-modal" data-modal="modal4">Show Modal</a>
+
+                      <pre>
+                      <code>
+&lt;a href="#" class="large purple button" onclick="console.log(document.getElementById('modal').className += ' show');"
+&gt;Show Modal&lt;/a&gt;
+&lt;div id="modal" class="modal "&gt;
+  &lt;h2&gt;
+    I'm a kickass modal window!
+    &lt;small&gt;
+      &lt;a href="#" class="cancelModal" onclick="document.getElementById('modal').className = 'modal';"&gt;X&lt;/a&gt;
+    &lt;/h2&gt;
+
+    &lt;div class="modal-content"&gt;
+      &lt;textarea&gt;
+        Say something...
+      &lt;/textarea&gt;
+      &lt;div class="controls"&gt;
+        &lt;a href="#" class="large purple button"&gt;Like a boss &raquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code>
+</pre>     
+
+          <div id="modal0" class="modal transparent gray">
+                      <h2>
+                        I'm a kickass modal window!
+                        <small>
+                          <a href="#" class="cancelModal" >X</a>
+                        </h2>
+
+
+                        <div class="modal-content">
+                          <textarea>
+                            Say something...
+                          </textarea>
+                          <div class="controls">
+                            <a href="#" class="large square purple button">Like a boss &raquo;</a>
+                          </div>
+                        </div>
+                      </div>
+
 
           <div id="modal1" class="modal transparent black">
             <h2>
@@ -286,7 +405,7 @@
                   Say something...
                 </textarea>
                 <div class="controls">
-                  <a href="#" class="large purple button">Like a boss &raquo;</a>
+                  <a href="#" class="large square purple button">Like a boss &raquo;</a>
                 </div>
               </div>
             </div>
@@ -302,7 +421,7 @@
 
                 <div class="modal-content">
                   <div class="controls">
-                    <a href="#" class="large purple button">Like a boss &raquo;</a>
+                    <a href="#" class="large square purple button">Like a boss &raquo;</a>
                   </div>
                 </div>
               </div>
@@ -320,7 +439,7 @@
                       Say something...
                     </textarea>
                     <div class="controls">
-                      <a href="#" class="large purple button">Like a boss &raquo;</a>
+                      <a href="#" class="large square purple button">Like a boss &raquo;</a>
                     </div>
                   </div>
                 </div>
@@ -339,13 +458,14 @@
                         Say something...
                       </textarea>
                       <div class="controls">
-                        <a href="#" class="large purple button">Like a boss &raquo;</a>
+                        <a href="#" class="large square purple button">Like a boss &raquo;</a>
                       </div>
                     </div>
                   </div>
 
 
                   <h3>Solid Modals</h3>
+                  <hr />
                   <section>
                   <a href="#" class="large gray square button show-modal" data-modal="modal5">Show Modal</a>
                   <a href="#" class="large green square button show-modal" data-modal="modal6">Show Modal</a>
@@ -435,6 +555,7 @@
 
 
                       <pre>
+                      <code>
 &lt;a href="#" class="large purple button" onclick="console.log(document.getElementById('modal').className += ' show');"&gt;Show Modal&lt;/a&gt;
 &lt;div id="modal" class="modal "&gt;
   &lt;h2&gt;
@@ -452,6 +573,7 @@
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+</code>
 </pre>          
                       </section>
 
@@ -474,6 +596,7 @@
                       </form>
 
                       <pre>
+                      <code>
 &lt;form class="special-labels"&gt;
   &lt;span class="wrap"&gt;
     &lt;label&gt;Name&lt;/label&gt;
@@ -486,6 +609,7 @@
   &lt;/span&gt;
 &lt;/form&gt;
 
+          </code>
           </pre>
 
 
@@ -495,6 +619,7 @@
                       <div id="search" style="display:none;">
                         <section>
                         <h3>Search Boxes</h3>
+                        <hr />
                         <div class="search dark expanding">
                           <input type="text" value="enter search here..." />
                           <span class="icon blue"></span>
@@ -510,14 +635,86 @@
                           <span class="icon red"></span>
                         </div>
 
+                        
+                      <pre>
+                      <code>
+&lt;form class="special-labels"&gt;
+  &lt;span class="wrap"&gt;
+    &lt;label&gt;Name&lt;/label&gt;
+    &lt;input type="text" /&gt;
+  &lt;/span&gt;
+
+  &lt;span class="wrap"&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input type="text" /&gt;
+  &lt;/span&gt;
+&lt;/form&gt;
+
+          </code>
+          </pre>
+
+
                         </section>
 
                       </div>
 
-                      <br />
-                      <br />
-                      <br />
-                      <br />
+
+                    <div id ="progress" style="display:none;">
+                      <h3>Progress Bars</h3>
+                      <hr />
+                      <div class="progress green">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress blue">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress red">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress purple">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <h3>Striped Progress Bars</h3>
+                      <hr />
+                      <div class="progress striped green">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress striped blue">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress striped red">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress striped purple">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+
+                    </div>
+
                     </div>
 
                     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
@@ -528,6 +725,8 @@
                     <script type="text/javascript" src="js/labels.js"></script>
                     <script type="text/javascript" src="js/pulsating.js"></script>
                     <script type="text/javascript" src="js/modals.js"></script>
+                    <script type="text/javascript" src="js/highlight.pack.js"></script>
+                    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 
 
                     <script type="text/javascript">

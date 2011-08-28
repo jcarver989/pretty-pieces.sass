@@ -12,9 +12,12 @@
   :min-width 120px
   :background-color $base-color
   +border-radius(4px)
-  +inset-box-shadow(0, 1px, 0, rgba(255,255,255,.3))
-  +gradient($base-color, darken($base-color, 10%))
   +ie-gradient(#0092ae, #00728d)
+  +gradient($base-color, darken($base-color, 10%))
+  +box-shadow(inset 0 1px 0 rgba(255,255,255,0.4))
+
+  &.striped
+    +striped-gradient($base-color, darken($base-color, 10%))
 
   h3
     :color #fff
@@ -39,3 +42,9 @@
 
 .gradient-box.purple
   +gradient-box($purple)
+
+.gradient-box.gray
+  +gradient-box($gray)
+
+.gradient-box.dark-gray
+  +gradient-box($dark-gray)

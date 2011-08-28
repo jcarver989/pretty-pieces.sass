@@ -1,0 +1,45 @@
+$progress-roundness: 20px
+
+= progress-bar($color)
+  height: 30px
+  margin: 5px 0
+  border: 1px solid rgba(0,0,0,.2)
+  border-bottom: 1px solid rgba(255,255,255,0.1)
+  +gradient(rgba(0,0,0,.4), rgba(0,0,0,.2))
+  +border-radius($progress-roundness)
+
+  .progress-value
+    :display block
+    :position relative
+    :height 100%
+    :border-top 1px solid rgba(255,255,255,0.4)
+    +border-radius($progress-roundness)
+    +box-shadow(inset 0 -3px 10px rgba(0,0,0,.4))
+    +gradient(lighten($color, 10%), $color)
+
+    .label
+      :display block
+      :position absolute
+      :right 10px 
+      :top 6px
+      :font-size 14px
+      :text-shadow 0 1px 0 rgba(0,0,0,.3)
+      :color #fff
+
+  &.striped
+    .progress-value
+      +striped-gradient(lighten($color, 10%), $color)
+
+.progress.green
+  +progress-bar($green)
+
+.progress.blue
+  +progress-bar($blue)
+
+.progress.red
+  +progress-bar($red)
+
+.progress.purple
+  +progress-bar($purple)
+
+
