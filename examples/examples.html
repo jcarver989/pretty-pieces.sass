@@ -15,7 +15,7 @@
               <a href="#" id="enable-light-css">Light</a>
             </div>
         </h1>
-        <h2>A set of useful widgets for <strong>SASS</strong> that makes life on the front end a whole lot easier.</h2>
+        <h2>A set of widgets for <strong>SASS</strong> that makes life on the front end a whole lot easier.</h2>
         <hr />
         </header>
 
@@ -34,18 +34,18 @@
           <section>
 <h3>Button Usage</h3>
 <hr/>
-<pre>
-<code>
-&lt;a href="" class="[size] [color] ('pill', 'square') 'striped' 'bordered' 'pulsating'"&gt;My Button&lt;/a&gt;
-&lt;!--
-Options: (you can mix and match)
---------------------------------------------
-Sizes: mega | large | medium | small | micro
-Colors: purple | blue | gray | dark-gray | red | green 
-(Pill/Square): makes buttons more or less round 
-Striped: draws diagonal stripes on buttons (default: off)
-Bordered: draws outer border on buttons (default: off) 
---&gt;
+<pre><code>&lt;a href="" class="[size] [color] ('pill', 'square') 'striped' 'bordered' 'pulsating'"&gt;My Button&lt;/a&gt;
+
+&lt;!------------------------------------------------
+Options: can mix and match
+
+size:             mega | large | medium | small | micro
+color:            purple | blue | gray | dark-gray | red | green 
+(pill|square):    makes buttons more or less round 
+striped:          draws diagonal stripes on buttons (default: off)
+bordered:         draws outer border on buttons (default: off) 
+pulsating:        makes button glow (default: off)
+-----------------------------------------------------&gt;
 </code>
 </pre>
 
@@ -339,123 +339,159 @@ Bordered: draws outer border on buttons (default: off)
 
 </code></pre>
 
+</div>
 
 
+<div id="gradients" style="display:none;">
+  <h3>Gradient Box Usage</h3>
+  <hr />
 
-
-
-        </div>
-
-        <div id="gradients" style="display:none;">
-          <h3>Gradient Boxes</h3>
-          <hr />
-          <section>
-          <div class="gradient-box green">
-            <h3>100</h3>
-            <small>Of Something</small>
-          </div>
-
-          <div class="gradient-box red">
-            <h3>200</h3>
-            <small>Of Something</small>
-          </div>
-
-          <div class="gradient-box blue">
-            <h3>200</h3>
-            <small>Of Something</small>
-          </div>
-
-          <div class="gradient-box purple">
-            <h3>200</h3>
-            <small>Of Something</small>
-          </div>
-
-
-          <div class="gradient-box gray">
-            <h3>200</h3>
-            <small>Of Something</small>
-          </div>
-
-          <pre>
-          <code>
-&lt;div class="gradient-box green"&gt;
+<pre><code>&lt;div class='[color] gradient-box'&gt;
   &lt;h3&gt;100&lt;/h3&gt;
   &lt;small&gt;Of Something&lt;/small&gt;
 &lt;/div&gt;
 
-&lt;div class="gradient-box red"&gt;
-  &lt;h3&gt;200&lt;/h3&gt;
-  &lt;small&gt;Of Something&lt;/small&gt;
-&lt;/div&gt;
+&lt;!--
+Options:
+color: same as buttons
+--&gt;
+</code>
+</pre>
 
-&lt;div class="gradient-box blue"&gt;
-  &lt;h3&gt;200&lt;/h3&gt;
-  &lt;small&gt;Of Something&lt;/small&gt;
-&lt;/div&gt;
-
-&lt;div class="gradient-box purple"&gt;
-  &lt;h3&gt;200&lt;/h3&gt;
-  &lt;small&gt;Of Something&lt;/small&gt;
-&lt;/div&gt;
-        </code>
-        </pre>
-
-
-        <h3>Striped Gradient Boxes</h3>
-          <hr />
-          <section>
-          <div class="gradient-box striped green">
-            <h3>100</h3>
-            <small>Of Something</small>
-          </div>
-
-          <div class="gradient-box red striped">
-            <h3>200</h3>
-            <small>Of Something</small>
-          </div>
-
-          <div class="gradient-box blue striped">
-            <h3>200</h3>
-            <small>Of Something</small>
-          </div>
-
-          <div class="gradient-box purple striped">
-            <h3>200</h3>
-            <small>Of Something</small>
-          </div>
-          
-          <div class="gradient-box gray striped">
-            <h3>200</h3>
-            <small>Of Something</small>
-          </div>
+  <h3>Gradient Boxes</h3>
+  <hr />
+  <section>
+    
+      
+      <div class="gradient-box purple">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box blue">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box gray">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      
+      <div class="gradient-box red">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box green">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
 
 
-
-          <pre>
-          <code>
-&lt;div class="gradient-box green"&gt;
+<pre><code>
+&lt;div class='gradient-box purple'&gt;
   &lt;h3&gt;100&lt;/h3&gt;
   &lt;small&gt;Of Something&lt;/small&gt;
 &lt;/div&gt;
 
-&lt;div class="gradient-box red"&gt;
-  &lt;h3&gt;200&lt;/h3&gt;
+&lt;div class='gradient-box blue'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
   &lt;small&gt;Of Something&lt;/small&gt;
 &lt;/div&gt;
 
-&lt;div class="gradient-box blue"&gt;
-  &lt;h3&gt;200&lt;/h3&gt;
+&lt;div class='gradient-box gray'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
   &lt;small&gt;Of Something&lt;/small&gt;
 &lt;/div&gt;
 
-&lt;div class="gradient-box purple"&gt;
-  &lt;h3&gt;200&lt;/h3&gt;
+&lt;div class='gradient-box red'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
   &lt;small&gt;Of Something&lt;/small&gt;
 &lt;/div&gt;
-        </code>
-        </pre>
-          </section>
-        </div>
+
+&lt;div class='gradient-box green'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+  </code></pre>
+  </section>
+
+  <h3>Striped Gradient Boxes</h3>
+  <hr />
+  <section>
+    
+      
+      <div class="gradient-box striped purple">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box striped blue">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box striped gray">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      
+      <div class="gradient-box striped red">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box striped green">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+
+
+<pre><code>
+&lt;div class='gradient-box striped purple'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box striped blue'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box striped gray'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box striped red'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box striped green'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+  </code></pre>
+  </section>
+
+
+</div>
 
 
         <div id="notifications" style="display:none;">
