@@ -1,16 +1,13 @@
-.notification
+= notification($color, $icon, $roundness: 15px)
   font-size: 20px
   color: #fff
   margin: 20px auto 0
   width: 100%
   padding: 3px 10px 4px 10px
   height: 30px
-  border: 1px solid rgba(0,0,0,.15)
-  border-bottom: 1px solid rgba(0,0,0,0.45)
   position: relative
-  +box-shadow(0 2px 2px rgba(0,0,0,.4))
-  +border-radius(8px)
-  +gradient(rgba(255,255,255,0.1), rgba(0,0,0,.15))
+  +border-radius($roundness)
+  +gradient(lighten($color, 10%), darken($color, 10%))
   +float-clear()
 
   h3
@@ -19,6 +16,8 @@
     margin: 0
     text-shadow: 0px 1px 1px rgba(0,0,0,.3) 
     float: left
+    background: url("../images/" + $icon) top left no-repeat
+    background-position: 0 2px 
 
   p
     margin: 8px 0 0 10px 
@@ -36,25 +35,6 @@
     right: -15px
     text-indent: -9999em
 
-  &.success
-    background-color: $green
-    h3
-      background: url(../images/check.png) no-repeat
-      background-position: 0 2px 
-
-  &.error
-    background-color: $red 
-    h3
-      background: url(../images/error.png) no-repeat
-      background-position: 0 2px 
-
-  &.warning
-    background-color: #d1c83a 
-    
-    h3
-      background: url(../images/warning.png) no-repeat
-      background-position: 0 2px 
-
   &.small
     width: auto
     margin: 0
@@ -68,4 +48,43 @@
     p
       margin: 0
       padding: 0 0 0 30px
-      
+
+  &.flat
+    background: $color
+    border: none
+    border-bottom: 4px solid darken($color, 20%)
+    +border-radius(0,0,0,0)
+    +clear-box-shadow
+
+    a.close-link
+      background: none
+      top: 7px
+      right: 10px
+      text-decoration: none
+      color: #222
+      text-indent: 0 
+      width: auto
+      height: auto
+
+      &:hover
+        color: #000
+
+  &.light
+    background: lighten($color, 40%)
+    color: #222
+    text-shadow: none
+
+    h3
+      color: #222
+      text-shadow: none
+
+.notification
+  &.success
+    +notification($green, "check.png")
+
+  &.error
+    +notification($red, "error.png")
+
+  &.warning
+    +notification($yellow, "warning.png")
+

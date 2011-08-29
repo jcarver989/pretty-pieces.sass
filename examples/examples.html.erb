@@ -54,27 +54,12 @@ Bordered: draws outer border on buttons (default: off)
 <hr />
 <section>
 
+<% colors.each do |color| %>
+  <%= button "large #{color}" %>
+<% end %>
 
-  <a href='#' class='large purple button'>Button!</a>
-
-  <a href='#' class='large blue button'>Button!</a>
-
-  <a href='#' class='large gray button'>Button!</a>
-
-  <a href='#' class='large dark-gray button'>Button!</a>
-
-  <a href='#' class='large red button'>Button!</a>
-
-  <a href='#' class='large green button'>Button!</a>
-
-
-<pre><code>&lt;a href='#' class='large purple button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large blue button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large dark-gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large red button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large green button'&gt;Button!&lt;/a&gt;
-
+<pre><code><% colors.each do |color| %><%=h button("large #{color}") %>
+<% end %>
 </code></pre>
 
 </section>
@@ -83,24 +68,12 @@ Bordered: draws outer border on buttons (default: off)
 <hr />
 <section>
 
+<% sizes.each_with_index do |size, i| %>
+  <%= button "#{size} #{colors[i]}" %>
+<% end %>
 
-  <a href='#' class='mega purple button'>Button!</a>
-
-  <a href='#' class='large blue button'>Button!</a>
-
-  <a href='#' class='medium gray button'>Button!</a>
-
-  <a href='#' class='small dark-gray button'>Button!</a>
-
-  <a href='#' class='micro red button'>Button!</a>
-
-
-<pre><code>&lt;a href='#' class='mega purple button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large blue button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='medium gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='small dark-gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='micro red button'&gt;Button!&lt;/a&gt;
-
+<pre><code><% sizes.each_with_index do |size, i| %><%= h button("#{size} #{colors[i]}") %>
+<% end %>
 </code></pre>
 </section>
 
@@ -108,235 +81,95 @@ Bordered: draws outer border on buttons (default: off)
 <h3>Square Buttons</h3>
 <hr />
 <section>
-  
-    <a href='#' class='large square purple button'>Button!</a>
-  
-    <a href='#' class='large square blue button'>Button!</a>
-  
-    <a href='#' class='large square gray button'>Button!</a>
-  
-    <a href='#' class='large square dark-gray button'>Button!</a>
-  
-    <a href='#' class='large square red button'>Button!</a>
-  
-    <a href='#' class='large square green button'>Button!</a>
-  
+  <% colors.each do |color| %>
+    <%= button "large square #{color}" %>
+  <% end %>
 </section>
 
 <pre>
-<code>&lt;a href="#" class="large square purple button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large square blue button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large square gray button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large square dark-gray button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large square red button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large square green button"&gt;Button!&lt;/a&gt;
-
+<code><% colors.each do |color| %>&lt;a href="#" class="large square <%= color %> button"&gt;Button!&lt;/a&gt;
+<% end %>
 </code></pre>
 
 
 <h3>Pill Buttons</h3>
 <hr />
 <section>
-  
-    <a href='#' class='large pill purple button'>Button!</a>
-  
-    <a href='#' class='large pill blue button'>Button!</a>
-  
-    <a href='#' class='large pill gray button'>Button!</a>
-  
-    <a href='#' class='large pill dark-gray button'>Button!</a>
-  
-    <a href='#' class='large pill red button'>Button!</a>
-  
-    <a href='#' class='large pill green button'>Button!</a>
-  
+  <% colors.each do |color| %>
+    <%= button "large pill #{color}" %>
+  <% end %>
 </section>
 
 <pre>
-<code>&lt;a href="#" class="large pull purple button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large pull blue button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large pull gray button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large pull dark-gray button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large pull red button"&gt;Button!&lt;/a&gt;
-&lt;a href="#" class="large pull green button"&gt;Button!&lt;/a&gt;
-
+<code><% colors.each do |color| %>&lt;a href="#" class="large pull <%= color %> button"&gt;Button!&lt;/a&gt;
+<% end %>
 </code></pre>
 
 
 <h3>Striped Buttons</h3>
 <hr />
 <section>
-  
-    <a href='#' class='large striped purple button'>Button!</a>
-  
-    <a href='#' class='large striped blue button'>Button!</a>
-  
-    <a href='#' class='large striped gray button'>Button!</a>
-  
-    <a href='#' class='large striped dark-gray button'>Button!</a>
-  
-    <a href='#' class='large striped red button'>Button!</a>
-  
-    <a href='#' class='large striped green button'>Button!</a>
-  
+  <% colors.each do |color| %>
+    <%= button "large striped #{color}" %>
+  <% end %>
 </section>
 
 <pre>
-<code>&lt;a href='#' class='large striped purple button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large striped blue button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large striped gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large striped dark-gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large striped red button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large striped green button'&gt;Button!&lt;/a&gt;
-
+<code><% colors.each do |color| %><%=h button "large striped #{color}" %>
+<% end %>
 </code></pre>
 
 <h3>Bordered Buttons</h3>
 <hr />
 <section>
-  
-    <a href='#' class='large pill bordered purple button'>Button!</a>
-  
-    <a href='#' class='large pill bordered blue button'>Button!</a>
-  
-    <a href='#' class='large pill bordered gray button'>Button!</a>
-  
-    <a href='#' class='large pill bordered dark-gray button'>Button!</a>
-  
-    <a href='#' class='large pill bordered red button'>Button!</a>
-  
-    <a href='#' class='large pill bordered green button'>Button!</a>
-  
+  <% colors.each do |color| %>
+    <%= button "large pill bordered #{color}" %>
+  <% end %>
 </section>
 
 <pre>
-<code>&lt;a href='#' class='large pill bordered purple button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pill bordered blue button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pill bordered gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pill bordered dark-gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pill bordered red button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pill bordered green button'&gt;Button!&lt;/a&gt;
-
+<code><% colors.each do |color| %><%=h button "large pill bordered #{color}" %>
+<% end %>
 </code></pre>
 
 
 <h3>Pulsating Buttons</h3>
 <hr />
 <section>
-  
-    <a href='#' class='large pulsating purple button'>Button!</a>
-  
-    <a href='#' class='large pulsating blue button'>Button!</a>
-  
-    <a href='#' class='large pulsating gray button'>Button!</a>
-  
-    <a href='#' class='large pulsating dark-gray button'>Button!</a>
-  
-    <a href='#' class='large pulsating red button'>Button!</a>
-  
-    <a href='#' class='large pulsating green button'>Button!</a>
-  
+  <% colors.each do |color| %>
+    <%= button "large pulsating #{color}" %>
+  <% end %>
 </section>
 
 <pre>
-<code>&lt;a href='#' class='large pulsating purple button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pulsating blue button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pulsating gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pulsating dark-gray button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pulsating red button'&gt;Button!&lt;/a&gt;
-&lt;a href='#' class='large pulsating green button'&gt;Button!&lt;/a&gt;
-
+<code><% colors.each do |color| %><%=h button "large pulsating #{color}" %>
+<% end %>
 </code></pre>
 
 
 <h3>Inset Button Groups</h3>
 <hr />
 <section>
-  
-    <div class="inset-button-group purple" style="float: left; margin-right:30px;">
+  <% colors.each do |color| %>
+    <div class="inset-button-group <%= color %>" style="float: left; margin-right:30px;">
       <a href="#" class="active">One</a>
       <a href="#">Two</a>
       <a href="#">Three</a>
       <a href="#">Four</a>
     </div>
-  
-    <div class="inset-button-group blue" style="float: left; margin-right:30px;">
-      <a href="#" class="active">One</a>
-      <a href="#">Two</a>
-      <a href="#">Three</a>
-      <a href="#">Four</a>
-    </div>
-  
-    <div class="inset-button-group gray" style="float: left; margin-right:30px;">
-      <a href="#" class="active">One</a>
-      <a href="#">Two</a>
-      <a href="#">Three</a>
-      <a href="#">Four</a>
-    </div>
-  
-    <div class="inset-button-group dark-gray" style="float: left; margin-right:30px;">
-      <a href="#" class="active">One</a>
-      <a href="#">Two</a>
-      <a href="#">Three</a>
-      <a href="#">Four</a>
-    </div>
-  
-    <div class="inset-button-group red" style="float: left; margin-right:30px;">
-      <a href="#" class="active">One</a>
-      <a href="#">Two</a>
-      <a href="#">Three</a>
-      <a href="#">Four</a>
-    </div>
-  
-    <div class="inset-button-group green" style="float: left; margin-right:30px;">
-      <a href="#" class="active">One</a>
-      <a href="#">Two</a>
-      <a href="#">Three</a>
-      <a href="#">Four</a>
-    </div>
-  
+  <% end %>
 
 <div style="clear:both;"></div>
 </section>
 
 <pre>
-<code>&lt;div class='inset-button-group purple'&gt;
-      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
-      &lt;a href='#'&gt;Two&lt;/a&gt;
-      &lt;a href='#'&gt;Three&lt;/a&gt;
-      &lt;a href='#'&gt;Four&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class='inset-button-group blue'&gt;
-      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
-      &lt;a href='#'&gt;Two&lt;/a&gt;
-      &lt;a href='#'&gt;Three&lt;/a&gt;
-      &lt;a href='#'&gt;Four&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class='inset-button-group gray'&gt;
-      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
-      &lt;a href='#'&gt;Two&lt;/a&gt;
-      &lt;a href='#'&gt;Three&lt;/a&gt;
-      &lt;a href='#'&gt;Four&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class='inset-button-group dark-gray'&gt;
-      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
-      &lt;a href='#'&gt;Two&lt;/a&gt;
-      &lt;a href='#'&gt;Three&lt;/a&gt;
-      &lt;a href='#'&gt;Four&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class='inset-button-group red'&gt;
-      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
-      &lt;a href='#'&gt;Two&lt;/a&gt;
-      &lt;a href='#'&gt;Three&lt;/a&gt;
-      &lt;a href='#'&gt;Four&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class='inset-button-group green'&gt;
-      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
-      &lt;a href='#'&gt;Two&lt;/a&gt;
-      &lt;a href='#'&gt;Three&lt;/a&gt;
-      &lt;a href='#'&gt;Four&lt;/a&gt;
-&lt;/div&gt;
-
+<code><% colors.each do |color| %><%= h("<div class='inset-button-group #{color}'>
+      <a href='#' class='active'>One</a>
+      <a href='#'>Two</a>
+      <a href='#'>Three</a>
+      <a href='#'>Four</a>
+</div>") %>
+<% end %>
 </code></pre>
 
 

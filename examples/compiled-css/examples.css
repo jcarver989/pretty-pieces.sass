@@ -533,6 +533,9 @@ button.button {
 .large.button {
   font-size: 20px; }
 
+.medium.button {
+  font-size: 16px; }
+
 .small.button {
   font-size: 14px; }
 
@@ -711,41 +714,38 @@ button.button {
       right: 0;
       bottom: 0; }
 
-.notification {
+.notification.success {
   font-size: 20px;
   color: white;
   margin: 20px auto 0;
   width: 100%;
   padding: 3px 10px 4px 10px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
   position: relative;
-  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-  -moz-border-radius: 8px 8px 8px 8px;
-  -webkit-border-radius: 8px 8px 8px 8px;
-  border-radius: 8px 8px 8px 8px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.15)));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.15)); }
-  .notification:after {
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9dca27), to(#5b7417));
+  background-image: -moz-linear-gradient(top, #9dca27, #5b7417); }
+  .notification.success:after {
     content: ".";
     visibility: hidden;
     display: block;
     clear: both; }
-  .notification h3 {
+  .notification.success h3 {
     padding-left: 30px;
     color: white;
     margin: 0;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-    float: left; }
-  .notification p {
+    float: left;
+    background: url("../images/check.png") top left no-repeat;
+    background-position: 0 2px; }
+  .notification.success p {
     margin: 8px 0 0 10px;
     float: left;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
     font-size: 14px; }
-  .notification a.close-link {
+  .notification.success a.close-link {
     background: url(../images/close.png) top left no-repeat;
     height: 36px;
     width: 36px;
@@ -753,32 +753,201 @@ button.button {
     top: -10px;
     right: -15px;
     text-indent: -9999em; }
-  .notification.success {
-    background-color: #7c9f1f; }
-    .notification.success h3 {
-      background: url(../images/check.png) no-repeat;
-      background-position: 0 2px; }
-  .notification.error {
-    background-color: #ae1919; }
-    .notification.error h3 {
-      background: url(../images/error.png) no-repeat;
-      background-position: 0 2px; }
-  .notification.warning {
-    background-color: #d1c83a; }
-    .notification.warning h3 {
-      background: url(../images/warning.png) no-repeat;
-      background-position: 0 2px; }
-  .notification.small {
+  .notification.success.small {
     width: auto;
     margin: 0; }
-    .notification.small h3 {
+    .notification.success.small h3 {
       font-size: 16px;
       height: 24px;
       padding-top: 6px;
       margin: 5px 0 0 0; }
-    .notification.small p {
+    .notification.success.small p {
       margin: 0;
       padding: 0 0 0 30px; }
+  .notification.success.flat {
+    background: #7c9f1f;
+    border: none;
+    border-bottom: 4px solid #394a0e;
+    -moz-border-radius: 0 0 0 0;
+    -webkit-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .notification.success.flat a.close-link {
+      background: none;
+      top: 7px;
+      right: 10px;
+      text-decoration: none;
+      color: #222222;
+      text-indent: 0;
+      width: auto;
+      height: auto; }
+      .notification.success.flat a.close-link:hover {
+        color: black; }
+  .notification.success.light {
+    background: #d7ec9e;
+    color: #222222;
+    text-shadow: none; }
+    .notification.success.light h3 {
+      color: #222222;
+      text-shadow: none; }
+.notification.error {
+  font-size: 20px;
+  color: white;
+  margin: 20px auto 0;
+  width: 100%;
+  padding: 3px 10px 4px 10px;
+  height: 30px;
+  position: relative;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#db1f1f), to(#811313));
+  background-image: -moz-linear-gradient(top, #db1f1f, #811313); }
+  .notification.error:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .notification.error h3 {
+    padding-left: 30px;
+    color: white;
+    margin: 0;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    float: left;
+    background: url("../images/error.png") top left no-repeat;
+    background-position: 0 2px; }
+  .notification.error p {
+    margin: 8px 0 0 10px;
+    float: left;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 14px; }
+  .notification.error a.close-link {
+    background: url(../images/close.png) top left no-repeat;
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    text-indent: -9999em; }
+  .notification.error.small {
+    width: auto;
+    margin: 0; }
+    .notification.error.small h3 {
+      font-size: 16px;
+      height: 24px;
+      padding-top: 6px;
+      margin: 5px 0 0 0; }
+    .notification.error.small p {
+      margin: 0;
+      padding: 0 0 0 30px; }
+  .notification.error.flat {
+    background: #ae1919;
+    border: none;
+    border-bottom: 4px solid #550c0c;
+    -moz-border-radius: 0 0 0 0;
+    -webkit-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .notification.error.flat a.close-link {
+      background: none;
+      top: 7px;
+      right: 10px;
+      text-decoration: none;
+      color: #222222;
+      text-indent: 0;
+      width: auto;
+      height: auto; }
+      .notification.error.flat a.close-link:hover {
+        color: black; }
+  .notification.error.light {
+    background: #f2a1a1;
+    color: #222222;
+    text-shadow: none; }
+    .notification.error.light h3 {
+      color: #222222;
+      text-shadow: none; }
+.notification.warning {
+  font-size: 20px;
+  color: white;
+  margin: 20px auto 0;
+  width: 100%;
+  padding: 3px 10px 4px 10px;
+  height: 30px;
+  position: relative;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dbd463), to(#afa729));
+  background-image: -moz-linear-gradient(top, #dbd463, #afa729); }
+  .notification.warning:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both; }
+  .notification.warning h3 {
+    padding-left: 30px;
+    color: white;
+    margin: 0;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    float: left;
+    background: url("../images/warning.png") top left no-repeat;
+    background-position: 0 2px; }
+  .notification.warning p {
+    margin: 8px 0 0 10px;
+    float: left;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 14px; }
+  .notification.warning a.close-link {
+    background: url(../images/close.png) top left no-repeat;
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    text-indent: -9999em; }
+  .notification.warning.small {
+    width: auto;
+    margin: 0; }
+    .notification.warning.small h3 {
+      font-size: 16px;
+      height: 24px;
+      padding-top: 6px;
+      margin: 5px 0 0 0; }
+    .notification.warning.small p {
+      margin: 0;
+      padding: 0 0 0 30px; }
+  .notification.warning.flat {
+    background: #d1c83a;
+    border: none;
+    border-bottom: 4px solid #86801f;
+    -moz-border-radius: 0 0 0 0;
+    -webkit-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .notification.warning.flat a.close-link {
+      background: none;
+      top: 7px;
+      right: 10px;
+      text-decoration: none;
+      color: #222222;
+      text-indent: 0;
+      width: auto;
+      height: auto; }
+      .notification.warning.flat a.close-link:hover {
+        color: black; }
+  .notification.warning.light {
+    background: #f8f6df;
+    color: #222222;
+    text-shadow: none; }
+    .notification.warning.light h3 {
+      color: #222222;
+      text-shadow: none; }
 
 .gradient-box.green {
   color: white;
