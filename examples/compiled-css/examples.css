@@ -197,6 +197,10 @@
     background-color: #008df6; }
   .blue.button:active {
     background-color: #0070c3; }
+  .blue.button.striped {
+    background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, #0070c3), color-stop(1, #005390));
+    background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -moz-linear-gradient(#0070c3 0%, #005390 100%);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0.17) 30px); }
   .blue.button:active, .blue.button.active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -235,6 +239,10 @@
     background-color: #12c5ff; }
   .light-blue.button:active {
     background-color: #00a8de; }
+  .light-blue.button.striped {
+    background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, #00a8de), color-stop(1, #0081ab));
+    background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -moz-linear-gradient(#00a8de 0%, #0081ab 100%);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0.17) 30px); }
   .light-blue.button:active, .light-blue.button.active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -273,6 +281,10 @@
     background-color: #9dca27; }
   .green.button:active {
     background-color: #7c9f1f; }
+  .green.button.striped {
+    background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, #7c9f1f), color-stop(1, #5b7417));
+    background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -moz-linear-gradient(#7c9f1f 0%, #5b7417 100%);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0.17) 30px); }
   .green.button:active, .green.button.active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -311,6 +323,10 @@
     background-color: #d4483b; }
   .orange.button:active {
     background-color: #b43428; }
+  .orange.button.striped {
+    background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, #b43428), color-stop(1, #8a281f));
+    background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -moz-linear-gradient(#b43428 0%, #8a281f 100%);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0.17) 30px); }
   .orange.button:active, .orange.button.active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -349,6 +365,10 @@
     background-color: #db1f1f; }
   .red.button:active {
     background-color: #ae1919; }
+  .red.button.striped {
+    background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, #ae1919), color-stop(1, #811313));
+    background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -moz-linear-gradient(#ae1919 0%, #811313 100%);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0.17) 30px); }
   .red.button:active, .red.button.active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -387,6 +407,10 @@
     background-color: #aa63db; }
   .purple.button:active {
     background-color: #933ad1; }
+  .purple.button.striped {
+    background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, #933ad1), color-stop(1, #7829af));
+    background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -moz-linear-gradient(#933ad1 0%, #7829af 100%);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0.17) 30px); }
   .purple.button:active, .purple.button.active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -425,6 +449,10 @@
     background-color: #4d4d4d; }
   .dark-gray.button:active {
     background-color: #333333; }
+  .dark-gray.button.striped {
+    background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, #333333), color-stop(1, #1a1a1a));
+    background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -moz-linear-gradient(#333333 0%, #1a1a1a 100%);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0.17) 30px); }
   .dark-gray.button:active, .dark-gray.button.active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -465,6 +493,10 @@
     background-color: white; }
   .gray.button:active {
     background-color: #eeeeee; }
+  .gray.button.striped {
+    background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(1, #d4d4d4));
+    background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px), -moz-linear-gradient(#eeeeee 0%, #d4d4d4 100%);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0.17) 30px); }
   .gray.button:active, .gray.button.active {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
@@ -976,6 +1008,90 @@ button.button {
     font-size: 18px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); }
 
+.search.dark {
+  position: relative;
+  width: 200px;
+  min-height: 35px;
+  margin: 5px 0 5px;
+  background-color: #333333;
+  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px; }
+  .search.dark .icon {
+    -moz-border-radius: 0 2px 2px 0;
+    -webkit-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 26px;
+    height: 27px;
+    padding: 5px;
+    background: url("../images/search-dark.png") no-repeat 5px 5px transparent;
+    display: block;
+    border: none;
+    cursor: pointer; }
+  .search.dark input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    padding-left: 10px;
+    line-height: 40px;
+    outline: none;
+    border: none;
+    color: white; }
+.search.light {
+  position: relative;
+  width: 200px;
+  min-height: 35px;
+  margin: 5px 0 5px;
+  background-color: #333333;
+  -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+  background-color: #eeeeee; }
+  .search.light .icon {
+    -moz-border-radius: 0 2px 2px 0;
+    -webkit-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 26px;
+    height: 27px;
+    padding: 5px;
+    background: url("../images/search-dark.png") no-repeat 5px 5px transparent;
+    display: block;
+    border: none;
+    cursor: pointer; }
+  .search.light input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    padding-left: 10px;
+    line-height: 40px;
+    outline: none;
+    border: none;
+    color: #333333; }
+.search.rounded {
+  -moz-border-radius: 22px 22px 22px 22px;
+  -webkit-border-radius: 22px 22px 22px 22px;
+  border-radius: 22px 22px 22px 22px; }
+.search.left .icon {
+  right: auto;
+  left: 3px;
+  -moz-border-radius: 2px 0 0 2px;
+  -webkit-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px; }
+.search.left input {
+  padding-left: 40px; }
+
 .progress.green {
   height: 30px;
   margin: 5px 0;
@@ -1140,7 +1256,11 @@ h1 {
   color: white;
   font-size: 50px;
   margin: 40px 0 30px 0;
-  letter-spacing: -2px; }
+  letter-spacing: -2px;
+  position: relative; }
+  h1 small {
+    position: absolute;
+    right: 0; }
 
 h2 {
   font-size: 28px;
@@ -1185,61 +1305,6 @@ pre {
   line-height: 20px;
   background-color: rgba(0, 0, 0, 0.3); }
 
-.search {
-  -moz-border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  border-radius: 6px 6px 6px 6px;
-  position: relative;
-  width: 200px;
-  min-height: 35px;
-  margin: 5px 0 5px; }
-  .search .icon {
-    -moz-border-radius: 0 4px 4px 0;
-    -webkit-border-radius: 0 4px 4px 0;
-    border-radius: 0 4px 4px 0;
-    -moz-box-shadow: inset 0 15px 3px rgba(255, 255, 255, 0.12), inset 0 -10px 4px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    -webkit-box-shadow: inset 0 15px 3px rgba(255, 255, 255, 0.12), inset 0 -10px 4px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    box-shadow: inset 0 15px 3px rgba(255, 255, 255, 0.12), inset 0 -10px 4px rgba(0, 0, 0, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 26px;
-    height: 27px;
-    padding: 5px;
-    background: url("../images/search-dark.png") no-repeat 5px 5px;
-    display: block;
-    border: none;
-    cursor: pointer; }
-    .search .icon.blue {
-      background-color: #0070c3; }
-    .search .icon.green {
-      background-color: #7c9f1f; }
-    .search .icon.red {
-      background-color: #ae1919; }
-  .search input {
-    width: 100%;
-    height: 35px;
-    background: transparent;
-    padding-left: 10px;
-    line-height: 30px;
-    outline: none;
-    border: none; }
-  .search.dark {
-    background-color: #222222;
-    -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.1), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-bottom: none; }
-    .search.dark input {
-      color: white; }
-  .search.light {
-    background-color: #eeeeee; }
-    .search.light input {
-      color: #333333; }
-    .search.light .icon {
-      background-image: url("../images/search-light.png"); }
-
 .inset-button-group {
   margin-top: 20px; }
   .inset-button-group.blue:after {
@@ -1256,7 +1321,6 @@ pre {
     text-decoration: none;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     background-color: #0070c3;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
@@ -1278,9 +1342,9 @@ pre {
       border-radius: 0 5px 5px 0px; }
     .inset-button-group.blue a.active, .inset-button-group.blue a:active {
       background-color: #0070c3;
-      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
       background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
       border-right: 1px solid rgba(255, 255, 255, 0.05); }
@@ -1298,7 +1362,6 @@ pre {
     text-decoration: none;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     background-color: #7c9f1f;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
@@ -1320,9 +1383,9 @@ pre {
       border-radius: 0 5px 5px 0px; }
     .inset-button-group.green a.active, .inset-button-group.green a:active {
       background-color: #7c9f1f;
-      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
       background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
       border-right: 1px solid rgba(255, 255, 255, 0.05); }
@@ -1340,7 +1403,6 @@ pre {
     text-decoration: none;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     background-color: #ae1919;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
@@ -1362,9 +1424,9 @@ pre {
       border-radius: 0 5px 5px 0px; }
     .inset-button-group.red a.active, .inset-button-group.red a:active {
       background-color: #ae1919;
-      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
       background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
       border-right: 1px solid rgba(255, 255, 255, 0.05); }
@@ -1382,7 +1444,6 @@ pre {
     text-decoration: none;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     background-color: #933ad1;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
@@ -1404,9 +1465,9 @@ pre {
       border-radius: 0 5px 5px 0px; }
     .inset-button-group.purple a.active, .inset-button-group.purple a:active {
       background-color: #933ad1;
-      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
       background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
       border-right: 1px solid rgba(255, 255, 255, 0.05); }
@@ -1424,7 +1485,6 @@ pre {
     text-decoration: none;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     background-color: #eeeeee;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
@@ -1446,9 +1506,9 @@ pre {
       border-radius: 0 5px 5px 0px; }
     .inset-button-group.gray a.active, .inset-button-group.gray a:active {
       background-color: #eeeeee;
-      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
       background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
       border-right: 1px solid rgba(255, 255, 255, 0.05); }
@@ -1469,7 +1529,6 @@ pre {
     text-decoration: none;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(0, 0, 0, 0.2);
-    border-bottom: 1p solid rgba(0, 0, 0, 0.3);
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
     background-color: #333333;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.3)));
@@ -1491,9 +1550,12 @@ pre {
       border-radius: 0 5px 5px 0px; }
     .inset-button-group.dark-gray a.active, .inset-button-group.dark-gray a:active {
       background-color: #333333;
-      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
-      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
+      box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.4), inset 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.2)));
       background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
       border-right: 1px solid rgba(255, 255, 255, 0.05); }
+  .inset-button-group.small a {
+    font-size: 14px;
+    letter-spacing: 0px; }

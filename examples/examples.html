@@ -2,11 +2,19 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="compiled-css/examples.css" />
+    <link id="light-css" rel="stylesheet" type="text/css" href="compiled-css/light.css" />
     <link rel="stylesheet" type="text/css" href="syntax.css" />
     <body>
       <div class="wrapper">
         <header>
-        <h1>Pretty Pieces</h1>
+        <h1>
+          Pretty Pieces
+          <small>
+            <div class="inset-button-group gray small">
+              <a href="#" class="active" id="enable-dark-css">Dark</a>
+              <a href="#" id="enable-light-css">Light</a>
+            </div>
+        </h1>
         <h2>A set of useful widgets for <strong>SASS</strong> that makes life on the front end a whole lot easier.</h2>
         <hr />
         </header>
@@ -31,6 +39,7 @@
           <section>
           <a href="#" class="mega purple pill button">Button!</a>
           <a href="#" class="large pill blue button">Button!</a>
+          <a href="#" class="medium gray pill button">Button!</a>
           <a href="#" class="medium pill dark-gray button">Button!</a>
           <a href="#" class="small pill red button">Button!</a>
           <a href="#" class="micro pill green button">Button!</a>
@@ -56,9 +65,33 @@
           <section>
           <a href="#" class="mega purple square button">Button!</a>
           <a href="#" class="large square blue button">Button!</a>
+          <a href="#" class="medium square gray button">Button!</a>
           <a href="#" class="medium square dark-gray button">Button!</a>
           <a href="#" class="small square red button">Button!</a>
           <a href="#" class="micro square green button">Button!</a>
+
+          <pre>
+          <code>
+  // sizes: mega, large, medium, small, micro
+  &lt;a href="#" class="mega green pulsating button"&gt;Button!&lt;/a&gt;
+  &lt;a href="#" class="large blue button"&gt;Button!&lt;/a&gt;
+  &lt;a href="#" class="medium dark-gray button"&gt;Button!&lt;/a&gt;
+  &lt;a href="#" class="small red button"&gt;Button!&lt;/a&gt;
+  &lt;a href="#" class="micro orange button"&gt;Button!&lt;/a&gt;
+          </code>
+          </pre>
+          </section>
+
+
+          <h3>Striped Buttons</h3>
+          <hr />
+          <section>
+          <a href="#" class="mega purple striped button">Button!</a>
+          <a href="#" class="large striped blue button">Button!</a>
+          <a href="#" class="medium striped gray button">Button!</a>
+          <a href="#" class="medium striped dark-gray button">Button!</a>
+          <a href="#" class="small striped red button">Button!</a>
+          <a href="#" class="micro striped green button">Button!</a>
 
           <pre>
           <code>
@@ -80,6 +113,7 @@
           <section>
           <a href="#" class="mega pill purple bordered button">Button!</a>
           <a href="#" class="large pill bordered blue button">Button!</a>
+          <a href="#" class="medium pill bordered gray button">Button!</a>
           <a href="#" class="medium pill bordered dark-gray button">Button!</a>
           <a href="#" class="small bordered red button">Button!</a>
           <a href="#" class="micro square bordered green button">Button!</a>
@@ -103,6 +137,7 @@
           <section>
           <a href="#" class="mega purple pulsating button">Button!</a>
           <a href="#" class="large blue pulsating button">Button!</a>
+          <a href="#" class="medium gray pulsating button">Button!</a>
           <a href="#" class="medium dark-gray pulsating button">Button!</a>
           <a href="#" class="small red pulsating button">Button!</a>
           <a href="#" class="micro green pulsating button">Button!</a>
@@ -620,19 +655,26 @@
                         <section>
                         <h3>Search Boxes</h3>
                         <hr />
-                        <div class="search dark expanding">
+
+                        <div class="search left dark expanding">
                           <input type="text" value="enter search here..." />
                           <span class="icon blue"></span>
                         </div>
 
-                        <div class="search dark expanding">
+
+                        <div class="search light expanding">
+                          <input type="text" value="enter search here..." />
+                          <span class="icon"></span>
+                        </div>
+
+                        <div class="search dark rounded expanding">
                           <input type="text" value="enter search here..." />
                           <span class="icon green"></span>
                         </div>
 
-                        <div class="search light expanding">
+                        <div class="search light rounded left expanding">
                           <input type="text" value="enter search here..." />
-                          <span class="icon red"></span>
+                          <span class="icon"></span>
                         </div>
 
                         
@@ -730,7 +772,36 @@
 
 
                     <script type="text/javascript">
-                      $("#menu").click(function(e) {
+                      function toggle_light_css() {
+                        var ele = document.getElementById("light-css")
+                        ele.disabled ? ele.disabled = false : ele.disabled = true
+                      }
+
+                      function switch_divs(hide, show) {
+                        hide.slideUp(200)
+                          show.show()
+                      }
+
+                      $(document).ready(function() {
+                       toggle_light_css()
+                        $("#enable-light-css").click(function() {
+                          var me = $(this)
+                          if (me.hasClass("active")) { return }
+                          $("#enable-dark-css").removeClass("active")
+                          me.addClass("active")
+                          toggle_light_css()
+                        }) 
+
+                        $("#enable-dark-css").click(function() {
+                          var me = $(this)
+                          if (me.hasClass("active")) { return }
+                          $("#enable-light-css").removeClass("active")
+                          me.addClass("active")
+                          toggle_light_css()
+                        })
+
+
+                        $("#menu").click(function(e) {
                           e.preventDefault()
                           var active = $("#menu .active")
                           var target = $(e.target)
@@ -745,13 +816,7 @@
 
                           switch_divs($(hide_id), $(show_id))
                           })
-
-function switch_divs(hide, show) {
-  hide.slideUp(200)
-    show.show()
-}
-
-
+                      })
 </script>
 
       </body>

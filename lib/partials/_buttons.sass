@@ -35,6 +35,9 @@ $border-transparency: 0.5
     :overflow hidden
     :padding 6px 15px 7px 15px
 
+    &.striped
+        +striped-gradient($base-color, darken($base-color, 10%))
+
     &:active, &.active
         +gradient(rgba(0,0,0,.3), rgba(0,0,0,.2))
         +box-shadow(0px 1px 3px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,0.1),inset 0 3px 3px rgba(0,0,0,0.4), inset 0 -1px 0 rgba(0,0,0,.3), inset 1px 0 0 rgba(255,255,255,0.1), inset -1px 0 0 rgba(255,255,255,0.1))
@@ -51,7 +54,6 @@ $border-transparency: 0.5
         :text-decoration none
         :border-right 1px solid rgba(255,255,255,0.2)
         :border-left 1px solid rgba(0,0,0,.2)
-        :border-bottom 1p solid rgba(0,0,0,.3)
         :text-shadow 0 1px 0 rgba(0,0,0,.4)
         :background-color $base-color 
         +gradient(rgba(255,255,255,0.1), rgba(0,0,0,.3))
@@ -69,7 +71,7 @@ $border-transparency: 0.5
 
         &.active, &:active
             :background-color $base-color
-            +box-shadow(inset 0 3px 4px rgba(0,0,0,.4))
+            +box-shadow(inset 0 3px 4px rgba(0,0,0,.4), inset 0 -1px 0 rgba(255,255,255,0.3))
             +gradient(rgba(0,0,0,.3), rgba(0,0,0,.2))
             :border-right 1px solid rgba(255,255,255,0.05)
 
