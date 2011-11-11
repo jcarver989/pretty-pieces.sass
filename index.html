@@ -1,0 +1,1058 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="compiled-css/examples.css" />
+    <link id="light-css" rel="stylesheet" type="text/css" href="compiled-css/light.css" />
+    <link rel="stylesheet" type="text/css" href="syntax.css" />
+    <body>
+      <div class="wrapper">
+        <header>
+        <h1>
+          Pretty Pieces
+          <small>
+            <div class="inset-button-group gray small">
+              <a href="#" class="active" id="enable-dark-css">Dark</a>
+              <a href="#" id="enable-light-css">Light</a>
+            </div>
+        </h1>
+        <h2>A set of widgets for <strong>SASS</strong> that makes life on the front end a whole lot easier.</h2>
+        <hr />
+        </header>
+
+        <div class="inset-button-group green" id="menu">
+          <a href="#" class="active" data-item="buttons">Buttons</a>
+          <a href="#" data-item="gradients">Boxes</a>
+          <a href="#" data-item="notifications">Notifications</a>
+          <a href="#" data-item="modals">Modals</a>
+          <a href="#" data-item="forms">Forms</a>
+          <a href="#" data-item="search">Search </a>
+          <a href="#" data-item="progress">Progress</a>
+        </div>
+
+
+        <div id="buttons">
+          <section>
+<h3>Button Usage</h3>
+<hr/>
+<pre><code>&lt;a href="" class="[size] [color] ('pill', 'square') 'striped' 'bordered' 'pulsating'"&gt;My Button&lt;/a&gt;
+
+&lt;!------------------------------------------------
+Options: can mix and match
+
+size:             mega | large | medium | small | micro
+color:            purple | blue | gray | dark-gray | red | green 
+(pill|square):    makes buttons more or less round 
+striped:          draws diagonal stripes on buttons (default: off)
+bordered:         draws outer border on buttons (default: off) 
+pulsating:        makes button glow (default: off)
+-----------------------------------------------------&gt;
+</code>
+</pre>
+
+
+<h3>Colors</h3>
+<hr />
+<section>
+
+
+  <a href='#' class='large purple button'>Button!</a>
+
+  <a href='#' class='large blue button'>Button!</a>
+
+  <a href='#' class='large gray button'>Button!</a>
+
+  <a href='#' class='large dark-gray button'>Button!</a>
+
+  <a href='#' class='large red button'>Button!</a>
+
+  <a href='#' class='large green button'>Button!</a>
+
+
+<pre><code>&lt;a href='#' class='large purple button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large blue button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large dark-gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large red button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large green button'&gt;Button!&lt;/a&gt;
+
+</code></pre>
+
+</section>
+
+<h3>Sizes</h3>
+<hr />
+<section>
+
+
+  <a href='#' class='mega purple button'>Button!</a>
+
+  <a href='#' class='large blue button'>Button!</a>
+
+  <a href='#' class='medium gray button'>Button!</a>
+
+  <a href='#' class='small dark-gray button'>Button!</a>
+
+  <a href='#' class='micro red button'>Button!</a>
+
+
+<pre><code>&lt;a href='#' class='mega purple button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large blue button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='medium gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='small dark-gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='micro red button'&gt;Button!&lt;/a&gt;
+
+</code></pre>
+</section>
+
+
+<h3>Square Buttons</h3>
+<hr />
+<section>
+  
+    <a href='#' class='large square purple button'>Button!</a>
+  
+    <a href='#' class='large square blue button'>Button!</a>
+  
+    <a href='#' class='large square gray button'>Button!</a>
+  
+    <a href='#' class='large square dark-gray button'>Button!</a>
+  
+    <a href='#' class='large square red button'>Button!</a>
+  
+    <a href='#' class='large square green button'>Button!</a>
+  
+</section>
+
+<pre>
+<code>&lt;a href="#" class="large square purple button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large square blue button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large square gray button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large square dark-gray button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large square red button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large square green button"&gt;Button!&lt;/a&gt;
+
+</code></pre>
+
+
+<h3>Pill Buttons</h3>
+<hr />
+<section>
+  
+    <a href='#' class='large pill purple button'>Button!</a>
+  
+    <a href='#' class='large pill blue button'>Button!</a>
+  
+    <a href='#' class='large pill gray button'>Button!</a>
+  
+    <a href='#' class='large pill dark-gray button'>Button!</a>
+  
+    <a href='#' class='large pill red button'>Button!</a>
+  
+    <a href='#' class='large pill green button'>Button!</a>
+  
+</section>
+
+<pre>
+<code>&lt;a href="#" class="large pull purple button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large pull blue button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large pull gray button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large pull dark-gray button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large pull red button"&gt;Button!&lt;/a&gt;
+&lt;a href="#" class="large pull green button"&gt;Button!&lt;/a&gt;
+
+</code></pre>
+
+
+<h3>Striped Buttons</h3>
+<hr />
+<section>
+  
+    <a href='#' class='large striped purple button'>Button!</a>
+  
+    <a href='#' class='large striped blue button'>Button!</a>
+  
+    <a href='#' class='large striped gray button'>Button!</a>
+  
+    <a href='#' class='large striped dark-gray button'>Button!</a>
+  
+    <a href='#' class='large striped red button'>Button!</a>
+  
+    <a href='#' class='large striped green button'>Button!</a>
+  
+</section>
+
+<pre>
+<code>&lt;a href='#' class='large striped purple button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large striped blue button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large striped gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large striped dark-gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large striped red button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large striped green button'&gt;Button!&lt;/a&gt;
+
+</code></pre>
+
+<h3>Bordered Buttons</h3>
+<hr />
+<section>
+  
+    <a href='#' class='large pill bordered purple button'>Button!</a>
+  
+    <a href='#' class='large pill bordered blue button'>Button!</a>
+  
+    <a href='#' class='large pill bordered gray button'>Button!</a>
+  
+    <a href='#' class='large pill bordered dark-gray button'>Button!</a>
+  
+    <a href='#' class='large pill bordered red button'>Button!</a>
+  
+    <a href='#' class='large pill bordered green button'>Button!</a>
+  
+</section>
+
+<pre>
+<code>&lt;a href='#' class='large pill bordered purple button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pill bordered blue button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pill bordered gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pill bordered dark-gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pill bordered red button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pill bordered green button'&gt;Button!&lt;/a&gt;
+
+</code></pre>
+
+
+<h3>Pulsating Buttons</h3>
+<hr />
+<section>
+  
+    <a href='#' class='large pulsating purple button'>Button!</a>
+  
+    <a href='#' class='large pulsating blue button'>Button!</a>
+  
+    <a href='#' class='large pulsating gray button'>Button!</a>
+  
+    <a href='#' class='large pulsating dark-gray button'>Button!</a>
+  
+    <a href='#' class='large pulsating red button'>Button!</a>
+  
+    <a href='#' class='large pulsating green button'>Button!</a>
+  
+</section>
+
+<pre>
+<code>&lt;a href='#' class='large pulsating purple button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pulsating blue button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pulsating gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pulsating dark-gray button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pulsating red button'&gt;Button!&lt;/a&gt;
+&lt;a href='#' class='large pulsating green button'&gt;Button!&lt;/a&gt;
+
+</code></pre>
+
+
+<h3>Inset Button Groups</h3>
+<hr />
+<section>
+  
+    <div class="inset-button-group purple" style="float: left; margin-right:30px;">
+      <a href="#" class="active">One</a>
+      <a href="#">Two</a>
+      <a href="#">Three</a>
+      <a href="#">Four</a>
+    </div>
+  
+    <div class="inset-button-group blue" style="float: left; margin-right:30px;">
+      <a href="#" class="active">One</a>
+      <a href="#">Two</a>
+      <a href="#">Three</a>
+      <a href="#">Four</a>
+    </div>
+  
+    <div class="inset-button-group gray" style="float: left; margin-right:30px;">
+      <a href="#" class="active">One</a>
+      <a href="#">Two</a>
+      <a href="#">Three</a>
+      <a href="#">Four</a>
+    </div>
+  
+    <div class="inset-button-group dark-gray" style="float: left; margin-right:30px;">
+      <a href="#" class="active">One</a>
+      <a href="#">Two</a>
+      <a href="#">Three</a>
+      <a href="#">Four</a>
+    </div>
+  
+    <div class="inset-button-group red" style="float: left; margin-right:30px;">
+      <a href="#" class="active">One</a>
+      <a href="#">Two</a>
+      <a href="#">Three</a>
+      <a href="#">Four</a>
+    </div>
+  
+    <div class="inset-button-group green" style="float: left; margin-right:30px;">
+      <a href="#" class="active">One</a>
+      <a href="#">Two</a>
+      <a href="#">Three</a>
+      <a href="#">Four</a>
+    </div>
+  
+
+<div style="clear:both;"></div>
+</section>
+
+<pre>
+<code>&lt;div class='inset-button-group purple'&gt;
+      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
+      &lt;a href='#'&gt;Two&lt;/a&gt;
+      &lt;a href='#'&gt;Three&lt;/a&gt;
+      &lt;a href='#'&gt;Four&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class='inset-button-group blue'&gt;
+      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
+      &lt;a href='#'&gt;Two&lt;/a&gt;
+      &lt;a href='#'&gt;Three&lt;/a&gt;
+      &lt;a href='#'&gt;Four&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class='inset-button-group gray'&gt;
+      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
+      &lt;a href='#'&gt;Two&lt;/a&gt;
+      &lt;a href='#'&gt;Three&lt;/a&gt;
+      &lt;a href='#'&gt;Four&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class='inset-button-group dark-gray'&gt;
+      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
+      &lt;a href='#'&gt;Two&lt;/a&gt;
+      &lt;a href='#'&gt;Three&lt;/a&gt;
+      &lt;a href='#'&gt;Four&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class='inset-button-group red'&gt;
+      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
+      &lt;a href='#'&gt;Two&lt;/a&gt;
+      &lt;a href='#'&gt;Three&lt;/a&gt;
+      &lt;a href='#'&gt;Four&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class='inset-button-group green'&gt;
+      &lt;a href='#' class='active'&gt;One&lt;/a&gt;
+      &lt;a href='#'&gt;Two&lt;/a&gt;
+      &lt;a href='#'&gt;Three&lt;/a&gt;
+      &lt;a href='#'&gt;Four&lt;/a&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+</div>
+
+
+<div id="gradients" style="display:none;">
+  <h3>Gradient Box Usage</h3>
+  <hr />
+
+<pre><code>&lt;div class='[color] gradient-box'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;!--
+Options:
+color: same as buttons
+--&gt;
+</code>
+</pre>
+
+  <h3>Gradient Boxes</h3>
+  <hr />
+  <section>
+    
+      
+      <div class="gradient-box purple">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box blue">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box gray">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      
+      <div class="gradient-box red">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box green">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+
+
+<pre><code>
+&lt;div class='gradient-box purple'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box blue'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box gray'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box red'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box green'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+  </code></pre>
+  </section>
+
+  <h3>Striped Gradient Boxes</h3>
+  <hr />
+  <section>
+    
+      
+      <div class="gradient-box striped purple">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box striped blue">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box striped gray">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      
+      <div class="gradient-box striped red">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+      
+      <div class="gradient-box striped green">
+        <h3>100</h3>
+        <small>Of Something</small>
+      </div>
+    
+
+
+<pre><code>
+&lt;div class='gradient-box striped purple'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box striped blue'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box striped gray'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box striped red'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;div class='gradient-box striped green'&gt;
+  &lt;h3&gt;100&lt;/h3&gt;
+  &lt;small&gt;Of Something&lt;/small&gt;
+&lt;/div&gt;
+
+  </code></pre>
+  </section>
+
+
+</div>
+
+
+        <div id="notifications" style="display:none;">
+          <h3>Notifications</h3>
+          <hr />
+          <section>
+          <div class="notification success">
+            <a href="#" class="close-link">Close</a>
+            <h3>Success!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+          <div class="notification error">
+            <a href="#" class="close-link">Close</a>
+            <h3>Fail!</h3>
+            <p>Boo you failed...typical</p>
+          </div>
+
+          <div class="notification warning">
+            <a href="#" class="close-link">Close</a>
+            <h3>Warning!</h3>
+            <p>Danger Will Robinson...danger</p>
+          </div>
+
+
+          <h3>Flat Notifications</h3>
+          <hr />
+         <div class="notification flat success">
+            <a href="#" class="close-link">X</a>
+            <h3>Success!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+         <div class="notification flat warning">
+            <a href="#" class="close-link">X</a>
+            <h3>Warning!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+
+        <div class="notification flat error">
+            <a href="#" class="close-link">X</a>
+            <h3>Error!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+
+
+          <h3>Light Notifications</h3>
+          <hr />
+         <div class="notification flat light success">
+            <a href="#" class="close-link">X</a>
+            <h3>Success!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+         <div class="notification flat light warning">
+            <a href="#" class="close-link">X</a>
+            <h3>Warning!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+
+          <div class="notification flat light error">
+            <a href="#" class="close-link">X</a>
+            <h3>Error!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+
+          <div class="notification light success">
+            <a href="#" class="close-link">X</a>
+            <h3>Success!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+         <div class="notification light warning">
+            <a href="#" class="close-link">X</a>
+            <h3>Warning!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+
+          <div class="notification light error">
+            <a href="#" class="close-link">X</a>
+            <h3>Error!</h3>
+            <p>Hurray you were successful in something...finally</p>
+          </div>
+
+
+
+          <pre>
+          <code>
+&lt;div class="notification success"&gt;
+  &lt;a href="#" class="close-link"&gt;Close&lt;/a&gt;
+  &lt;h3&gt;Success!&lt;/h3&gt;
+  &lt;p&gt;Hurray you were successful in something...finally&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="notification error"&gt;
+  &lt;a href="#" class="close-link"&gt;Close&lt;/a&gt;
+  &lt;h3&gt;Fail!&lt;/h3&gt;
+  &lt;p&gt;Boo you failed...typical&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="notification warning"&gt;
+  &lt;a href="#" class="close-link"&gt;Close&lt;/a&gt;
+  &lt;h3&gt;Warning!&lt;/h3&gt;
+  &lt;p&gt;Danger Will Robinson...danger&lt;/p&gt;
+&lt;/div&gt;
+
+        </code>
+        </pre>
+          </section>
+
+        </div>
+
+        <div id="modals" style="display:none;">
+          <h3>Transparent Modals</h3>
+          <hr />
+          <section>
+          <a href="#" class="large square gray button show-modal" data-modal="modal0">Show Modal</a>
+          <a href="#" class="large square dark-gray button show-modal" data-modal="modal1">Show Modal</a>
+          <a href="#" class="large square green button show-modal" data-modal="modal2">Show Modal</a>
+          <a href="#" class="large square blue button show-modal" data-modal="modal3">Show Modal</a>
+          <a href="#" class="large square red button show-modal" data-modal="modal4">Show Modal</a>
+
+                      <pre>
+                      <code>
+&lt;a href="#" class="large purple button" onclick="console.log(document.getElementById('modal').className += ' show');"
+&gt;Show Modal&lt;/a&gt;
+&lt;div id="modal" class="modal "&gt;
+  &lt;h2&gt;
+    I'm a kickass modal window!
+    &lt;small&gt;
+      &lt;a href="#" class="cancelModal" onclick="document.getElementById('modal').className = 'modal';"&gt;X&lt;/a&gt;
+    &lt;/h2&gt;
+
+    &lt;div class="modal-content"&gt;
+      &lt;textarea&gt;
+        Say something...
+      &lt;/textarea&gt;
+      &lt;div class="controls"&gt;
+        &lt;a href="#" class="large purple button"&gt;Like a boss &raquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code>
+</pre>     
+
+          <div id="modal0" class="modal transparent gray">
+                      <h2>
+                        I'm a kickass modal window!
+                        <small>
+                          <a href="#" class="cancelModal" >X</a>
+                        </h2>
+
+
+                        <div class="modal-content">
+                          <textarea>
+                            Say something...
+                          </textarea>
+                          <div class="controls">
+                            <a href="#" class="large square purple button">Like a boss &raquo;</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+          <div id="modal1" class="modal transparent black">
+            <h2>
+              I'm a kickass modal window!
+              <small>
+                <a href="#" class="cancelModal" >X</a>
+              </h2>
+
+
+              <div class="modal-content">
+                <textarea>
+                  Say something...
+                </textarea>
+                <div class="controls">
+                  <a href="#" class="large square purple button">Like a boss &raquo;</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="modal2" class="modal transparent green">
+              <h2>
+                I'm a kickass modal window!
+                <small>
+                  <a href="#" class="cancelModal" >X</a>
+                </h2>
+
+
+                <div class="modal-content">
+                  <div class="controls">
+                    <a href="#" class="large square purple button">Like a boss &raquo;</a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="modal3" class="modal transparent blue">
+                <h2>
+                  I'm a kickass modal window!
+                  <small>
+                    <a href="#" class="cancelModal" >X</a>
+                  </h2>
+
+
+                  <div class="modal-content">
+                    <textarea>
+                      Say something...
+                    </textarea>
+                    <div class="controls">
+                      <a href="#" class="large square purple button">Like a boss &raquo;</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="modal4" class="modal transparent red">
+                  <h2>
+                    I'm a kickass modal window!
+                    <small>
+                      <a href="#" class="cancelModal" >X</a>
+                    </h2>
+
+
+                    <div class="modal-content">
+                      <textarea>
+                        Say something...
+                      </textarea>
+                      <div class="controls">
+                        <a href="#" class="large square purple button">Like a boss &raquo;</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <h3>Solid Modals</h3>
+                  <hr />
+                  <section>
+                  <a href="#" class="large gray square button show-modal" data-modal="modal5">Show Modal</a>
+                  <a href="#" class="large green square button show-modal" data-modal="modal6">Show Modal</a>
+                  <a href="#" class="large blue square button show-modal" data-modal="modal7">Show Modal</a>
+                  <a href="#" class="large red square  button show-modal" data-modal="modal8">Show Modal</a>
+
+
+                  <div id="modal5" class="modal solid gray">
+                    <h2>
+                      Sign Up
+                      <small>
+                        <a href="#" class="cancelModal" >X</a>
+                      </h2>
+
+                      <hr />
+
+                      <div class="modal-content">
+                        <form class="special-labels">
+                          <span class="wrap">
+                            <label>Name</label>
+                            <input type="text" />
+                          </span>
+
+                          <span class="wrap">
+                            <label>Email</label>
+                            <input type="text" />
+                          </span>
+                        </form>
+
+                        <div class="controls">
+                          <a href="#" class="large gray square button">Register &raquo;</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="modal6" class="modal solid green">
+                      <h2>
+                        I'm a kickass modal window!
+                        <small>
+                          <a href="#" class="cancelModal" >X</a>
+                        </h2>
+
+
+                        <hr />
+                        <div class="modal-content">
+                          <div class="controls">
+                            <a href="#" class="large green square button">Like a boss &raquo;</a>
+                          </div>
+                        </div>
+                      </div>
+
+                   <div id="modal7" class="modal solid blue">
+                      <h2>
+                        I'm a kickass modal window!
+                        <small>
+                          <a href="#" class="cancelModal" >X</a>
+                        </h2>
+
+
+                        <hr />
+                        <div class="modal-content">
+                          <div class="controls">
+                            <a href="#" class="large blue square button">Like a boss &raquo;</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                   <div id="modal8" class="modal solid red">
+                      <h2>
+                        I'm a kickass modal window!
+                        <small>
+                          <a href="#" class="cancelModal" >X</a>
+                        </h2>
+
+
+                        <hr />
+                        <div class="modal-content">
+                          <div class="controls">
+                            <a href="#" class="large red square button">Like a boss &raquo;</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      </section>
+
+
+                      <pre>
+                      <code>
+&lt;a href="#" class="large purple button" onclick="console.log(document.getElementById('modal').className += ' show');"&gt;Show Modal&lt;/a&gt;
+&lt;div id="modal" class="modal "&gt;
+  &lt;h2&gt;
+    I'm a kickass modal window!
+    &lt;small&gt;
+      &lt;a href="#" class="cancelModal" onclick="document.getElementById('modal').className = 'modal';"&gt;X&lt;/a&gt;
+    &lt;/h2&gt;
+
+    &lt;div class="modal-content"&gt;
+      &lt;textarea&gt;
+        Say something...
+      &lt;/textarea&gt;
+      &lt;div class="controls"&gt;
+        &lt;a href="#" class="large purple button"&gt;Like a boss &raquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code>
+</pre>          
+                      </section>
+
+                    </div>
+
+
+                    <div id="forms" style="display:none;">
+
+                      <h3>Fading Labels</h3>
+                      <form class="special-labels">
+                        <span class="wrap">
+                          <label>Name</label>
+                          <input type="text" />
+                        </span>
+
+                        <span class="wrap">
+                          <label>Email</label>
+                          <input type="text" />
+                        </span>
+                      </form>
+
+                      <pre>
+                      <code>
+&lt;form class="special-labels"&gt;
+  &lt;span class="wrap"&gt;
+    &lt;label&gt;Name&lt;/label&gt;
+    &lt;input type="text" /&gt;
+  &lt;/span&gt;
+
+  &lt;span class="wrap"&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input type="text" /&gt;
+  &lt;/span&gt;
+&lt;/form&gt;
+
+          </code>
+          </pre>
+
+
+                      </div>
+
+
+                      <div id="search" style="display:none;">
+                        <section>
+                        <h3>Search Boxes</h3>
+                        <hr />
+
+                        <div class="search left dark expanding">
+                          <input type="text" value="enter search here..." />
+                          <span class="icon blue"></span>
+                        </div>
+
+
+                        <div class="search light expanding">
+                          <input type="text" value="enter search here..." />
+                          <span class="icon"></span>
+                        </div>
+
+                        <div class="search dark rounded expanding">
+                          <input type="text" value="enter search here..." />
+                          <span class="icon green"></span>
+                        </div>
+
+                        <div class="search light rounded left expanding">
+                          <input type="text" value="enter search here..." />
+                          <span class="icon"></span>
+                        </div>
+
+                        
+                      <pre>
+                      <code>
+&lt;form class="special-labels"&gt;
+  &lt;span class="wrap"&gt;
+    &lt;label&gt;Name&lt;/label&gt;
+    &lt;input type="text" /&gt;
+  &lt;/span&gt;
+
+  &lt;span class="wrap"&gt;
+    &lt;label&gt;Email&lt;/label&gt;
+    &lt;input type="text" /&gt;
+  &lt;/span&gt;
+&lt;/form&gt;
+
+          </code>
+          </pre>
+
+
+                        </section>
+
+                      </div>
+
+
+                    <div id ="progress" style="display:none;">
+                      <h3>Progress Bars</h3>
+                      <hr />
+                      <div class="progress green">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress blue">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress red">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress purple">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <h3>Striped Progress Bars</h3>
+                      <hr />
+                      <div class="progress striped green">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress striped blue">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress striped red">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+                      <div class="progress striped purple">
+                        <div class="progress-value" style="width: 80%">
+                          <span class="label">Progress: 80%</span>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    </div>
+
+                    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+                    <script type="text/javascript" src="js/util.js"></script>
+                    <script type="text/javascript" src="js/searchboxes.js"></script>
+                    <script type="text/javascript" src="js/notifications.js"></script>
+                    <script type="text/javascript" src="js/noise.js"></script>
+                    <script type="text/javascript" src="js/labels.js"></script>
+                    <script type="text/javascript" src="js/pulsating.js"></script>
+                    <script type="text/javascript" src="js/modals.js"></script>
+                    <script type="text/javascript" src="js/highlight.pack.js"></script>
+                    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+
+                    <script type="text/javascript">
+                      function toggle_light_css() {
+                        var ele = document.getElementById("light-css")
+                        ele.disabled ? ele.disabled = false : ele.disabled = true
+                      }
+
+                      function switch_divs(hide, show) {
+                        hide.slideUp(200)
+                          show.show()
+                      }
+
+                      $(document).ready(function() {
+                       toggle_light_css()
+                        $("#enable-light-css").click(function() {
+                          var me = $(this)
+                          if (me.hasClass("active")) { return }
+                          $("#enable-dark-css").removeClass("active")
+                          me.addClass("active")
+                          toggle_light_css()
+                        }) 
+
+                        $("#enable-dark-css").click(function() {
+                          var me = $(this)
+                          if (me.hasClass("active")) { return }
+                          $("#enable-light-css").removeClass("active")
+                          me.addClass("active")
+                          toggle_light_css()
+                        })
+
+
+                        $("#menu").click(function(e) {
+                          e.preventDefault()
+                          var active = $("#menu .active")
+                          var target = $(e.target)
+                          var show_id = "#" + target.attr("data-item")
+                          var hide_id = "#" + active.attr("data-item")
+
+                          if (show_id === hide_id) { return }
+
+                          active.removeClass("active")
+
+                          target.addClass("active")
+
+                          switch_divs($(hide_id), $(show_id))
+                          })
+                      })
+</script>
+
+      </body>
+    </html>
