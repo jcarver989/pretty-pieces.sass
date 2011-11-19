@@ -11,15 +11,15 @@
           Pretty Pieces
           <small>
             <div class="inset-button-group gray small">
-              <a href="#" class="active" id="enable-dark-css">Dark</a>
-              <a href="#" id="enable-light-css">Light</a>
+              <a href="#" class="active" id="enable-light-css">Light</a>
+              <a href="#" id="enable-dark-css">Dark</a>
             </div>
         </h1>
         <h2>A set of widgets for <strong>SASS</strong> that makes life on the front end a whole lot easier.</h2>
         <hr />
         </header>
 
-        <div class="inset-button-group green" id="menu">
+        <div class="inset-button-group dark-gray" id="menu">
           <a href="#" class="active" data-item="buttons">Buttons</a>
           <a href="#" data-item="gradients">Boxes</a>
           <a href="#" data-item="notifications">Notifications</a>
@@ -1018,7 +1018,6 @@ color: same as buttons
                       }
 
                       $(document).ready(function() {
-                       toggle_light_css()
                         $("#enable-light-css").click(function() {
                           var me = $(this)
                           if (me.hasClass("active")) { return }
