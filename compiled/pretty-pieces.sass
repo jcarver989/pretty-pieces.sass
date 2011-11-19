@@ -7,6 +7,14 @@
 
 
 
+
+
+
+
+// ----------------------
+// COLORS
+// ----------------------
+
 $blue: #0070c3
 $light-blue: #00a8de
 $green: #7c9f1f
@@ -17,278 +25,171 @@ $dark_gray: #333
 $gray: #888
 $light-gray: #eee
 $purple: #933ad1
+$yellow: yellow
+$column_margin: 20px
+$column_gutter: 20px
+
+= float-clear
+    &:after
+        content: "."
+        visibility: hidden
+        display: block
+        clear: both
 
 .row
-    :margin 20px 0 20px 0
-
+    margin: $column_margin 0 $column_margin 0
 
 .centered
-    :margin-left auto
-    :margin-right auto
-    :margin-top 40px
-    :text-align center
-
-
-.mini-row
-    :margin 10px 0 0 0
-    :overflow hidden
-.first-mini-row
-    :margin 0
-    :overflow hidden
-
-.row:after, .mini-row:after
-    :display block
-    :clear both
-    :content "."
-    :visibility hidden
-    :height 0
-
-#firstRow
-    :margin 0
-
+    margin-left: auto
+    margin-right: auto
+    text-align: center
 
 .column, .columns
-    :margin 0 0 0 20px
-    :padding 0
-    :float left
+    margin: 0 0 0 $column_gutter 
+    padding: 0
+    float: left
 
     &:first-child
-        :margin-left 0
+        margin-left: 0
 
-.first-column
-    :margin 0
-    :padding 0
-    :float left
+.mini-row
+    margin: $column_margin/2 0 0 0
+    overflow: hidden
 
+    .column, .columns
+        margin-left: $column_gutter/2 
 
-.mini-row .column
-    :margin-left 10px
-
+.row, .mini_row
+    +float-clear()
 
 .quarter
-    :width 25px
+    width: 25px
+
 .half
-    :width 50px
+    width: 50px
 
 .three-quarters
-    :width 75px
+    width: 75px
 
-.one
-    :width 100px
+$widths: one, two, three, four, five, six, seven, eight, nine
+@for $i from 1 through length($widths) 
 
-.two
-    :width 200px
+    $fluid_width: $i * 10
+    $width: $fluid_width * 10
+    $item: nth($widths, $i)
 
-.three
-    :width 300px
+    .#{$item}
+        width: #{$width}px
+        &.fluid
+            width: #{$fluid_width + "%"}
 
-.four
-    :width 400px
+    .#{$item}-and-a-quarter
+        width: #{$width + 25}px
+        &.fluid
+            width: #{$fluid_width + "%"}
 
+    .#{$item}-and-a-half
+        width: #{$width + 50}px
+        &.fluid
+            width: #{$fluid_width + "%"}
 
-.five
-    :width 500px
-
-
-.six
-    :width 600px
-
-.seven
-    :width 700px
-
-.eight
-    :width 800px
-
-.nine
-    :width 900px
+    .#{$item}-and-three-quarters
+        width: #{$width + 75}px
+        &.fluid
+            width: #{$fluid_width + "%"}
 
 .ten
-    :width 1000px
-
-.one-and-a-quarter
-    :width 125px
-
-.two-and-a-quarter
-    :width 225px
-
-.three-and-a-quarter
-    :width 325px
-
-.four-and-a-quarter
-    :width 425px
-
-.five-and-a-quarter
-    :width 525px
-
-.six-and-a-quarter
-    :width 625px
-
-.seven-and-a-quarter
-    :width 725px
-
-.eight-and-a-quarter
-    :width 825px
-
-.nine-and-a-quarter
-    :width 925px
-
-
-.one-and-a-half
-    :width 150px
-
-.two-and-a-half
-    :width 250px
-
-.three-and-a-half
-    :width 350px
-
-.four-and-a-half
-    :width 450px
-
-.five-and-a-half
-    :width 550px
-
-.six-and-a-half
-    :width 650px
-
-.seven-and-a-half
-    :width 750px
-
-.eight-and-a-half
-    :width 850px
-
-.nine-and-a-half
-    :width 950px
-
-.one-and-three-quarter
-    :width 175px
-
-.two-and-three-quarters
-    :width 275px
-
-.three-and-three-quarters
-    :width 375px
-
-.four-and-three-quarters
-    :width 475px
-
-.five-and-three-quarters
-    :width 575px
-
-.six-and-three-quarters
-    :width 675px
-
-.seven-and-three-quarters
-    :width 775px
-
-.eight-and-three-quarters
-    :width 875px
-
-.nine-and-three-quarters
-    :width 975px
-
-.one-half
-    :width 470px
-
-.one-third
-    :width 30%
-
-
+    width: 1000px
+    &.fluid
+        width: 100%
+.half
+    width: (1000- ($column_margin*2))/2px
 // -------------------------
 // CSS3 - ROUNDED CORNERS + SHADOWS
 // -------------------------
 = border-radius($top-left, $top-right: $top-left, $bottom-left: $top-left, $bottom-right: $top-left)
-    :-moz-border-radius      $top-left $top-right $bottom-left $bottom-right
-    :-webkit-border-radius   $top-left $top-right $bottom-left $bottom-right
-    :border-radius           $top-left $top-right $bottom-left $bottom-right
+    -moz-border-radius:      $top-left $top-right $bottom-left $bottom-right
+    -webkit-border-radius:   $top-left $top-right $bottom-left $bottom-right
+    border-radius:           $top-left $top-right $bottom-left $bottom-right
 
 = gradient($color1,$color2)
-    :background-image -webkit-gradient(linear, left top, left bottom, from($color1), to($color2))
-    :background-image -moz-linear-gradient(top,  $color1,  $color2)
+    background-image: -webkit-gradient(linear, left top, left bottom, from($color1), to($color2))
+    background-image: -moz-linear-gradient(top,  $color1,  $color2)
 
 = striped-gradient($color1, $color2)
     background-image: -webkit-repeating-linear-gradient(-30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255,255,255,0) 15px, rgba(255,255,255,0) 30px), -webkit-gradient(linear, left bottom, left top, color-stop(0, $color1), color-stop(1, $color2))
 
     background-image: -moz-repeating-linear-gradient(left top -30deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.17) 15px, rgba(255, 255, 255, 0) 15px, rgba(255, 255, 255, 0) 30px),  -moz-linear-gradient($color1 0%, $color2 100%)
-
     background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(255,255,255,0.17) 15px, rgba(255,255,255,0.17) 30px)
 
 = ie-gradient($color1, $color2)
-    :filter progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#{$color1}', endColorstr='#{$color2}')
-    :-ms-filter "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$color1}', endColorstr='#{$color2}')"
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#{$color1}', endColorstr='#{$color2}')
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$color1}', endColorstr='#{$color2}')"
 
 = box-shadow($first: 0 0 0 transparent, $second: 0 0 0 transparent, $third: 0 0 0 transparent, $fourth: 0 0 0 transparent, $fith: 0 0 0 transparent, $sixth: 0 0 0 transparent)
-    :-moz-box-shadow     $first, $second, $third, $fourth, $fith 
-    :-webkit-box-shadow  $first, $second, $third, $fourth, $fith 
-    :box-shadow          $first, $second, $third, $fourth, $fith  
+    -moz-box-shadow:    $first, $second, $third, $fourth, $fith 
+    -webkit-box-shadow: $first, $second, $third, $fourth, $fith 
+    box-shadow:         $first, $second, $third, $fourth, $fith  
 
 = stroke-with-shadow($shadow-opacity: 0.4, $highlight-opacity: 0.2)
     +box-shadow(inset 0 1px 0 rgba(255,255,255,$highlight-opacity), inset 0 -1px 0 rgba(0,0,0,$shadow-opacity), inset 1px 0 0 rgba(255,255,255,0.1), inset -1px 0 0 rgba(255,255,255,0.1))
 
-= inset-box-shadow($y,$x,$blur,$color)
-    :-moz-box-shadow       inset $y $x $blur $color
-    :-webkit-box-shadow    inset $y $x $blur $color
-    :box-sahdow            inset $y $x $blur $color
-
 = clear-box-shadow
-    :-moz-box-shadow     none
-    :-webkit-box-shadow  none
-    :box-shadow          none
+    -moz-box-shadow:     none
+    -webkit-box-shadow:  none
+    box-shadow:          none
 
 = lighten-on-hover($color, $intensity: 10%)
-    :background-color  $color
+    background-color:  $color
     &:hover
-        :background-color lighten($color, $intensity) 
+        background-color: lighten($color, $intensity) 
     &:active
-        :background-color  $color
+        background-color:  $color
 
 // -------------------------
 // POSITIONING
 // -------------------------
 = float-clear
     &:after
-        :content "."
-        :visibility hidden
-        :display block
-        :clear both
+        content: "."
+        visibility: hidden
+        display: block
+        clear: both
 
 = inline-block
     display: inline-block
     zoom: 1
     *display: inline
-
-
-
 = shorthand ($weight: normal, $size: 14px, $lineHeight: normal) 
-  font:
-    size: $size
-    weight: $weight
-  line-height: $lineHeight
+    font:
+        size: $size
+        weight: $weight
+
+    line-height: $lineHeight
 
 = sans-serif($weight: normal, $size: 14px, $lineHeight: normal) 
-  font:
-    family: "Helvetica Neue", Helvetica, Arial, sans-serif
-    size: $size
-    weight: $weight
+    font:
+        family: "Helvetica Neue", Helvetica, Arial, sans-serif
+        size: $size
+        weight: $weight
 
-  line-height: $lineHeight
+    line-height: $lineHeight
 
 = serif($weight: normal, $size: 14px, $lineHeight: normal) 
-  font:
-    family: "Georgia", Times New Roman, Times, sans-serif
-    size: $size
-    weight: $weight
+    font:
+        family: "Georgia", Times New Roman, Times, sans-serif
+        size: $size
+        weight: $weight
 
-  line-height: $lineHeight
+    line-height: $lineHeight
 
 = monospace($weight: normal, $size: 12px, $lineHeight: normal) 
-  font:
-    family: "Monaco", Courier New, monospace
-    size: $size
-    weight: $weight
+    font:
+        family: "Monaco", Courier New, monospace
+        size: $size
+        weight: $weight
 
-  line-height: $lineHeight
-
+    line-height: $lineHeight
 // ---------------------------------------
 // OPTIONS 
 // ---------------------------------------
