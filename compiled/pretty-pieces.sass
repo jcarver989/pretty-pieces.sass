@@ -541,243 +541,243 @@ button.button
             :right 0
             :bottom 0
 = notification($color, $icon, $roundness: 15px)
-  font-size: 20px
-  color: #fff
-  margin: 20px auto 0
-  width: 100%
-  padding: 3px 10px 4px 10px
-  height: 30px
-  position: relative
-  +border-radius($roundness)
-  +gradient(lighten($color, 10%), darken($color, 10%))
-  +float-clear()
-
-  h3
-    padding-left: 30px
+    font-size: 20px
     color: #fff
-    margin: 0
-    text-shadow: 0px 1px 1px rgba(0,0,0,.3) 
-    float: left
-    background: url("../images/" + $icon) top left no-repeat
-    background-position: 0 2px 
-
-  p
-    margin: 8px 0 0 10px 
-    float: left
-    text-shadow: 0px 1px 1px rgba(0,0,0,.3) 
-    font-size: 14px
-
-
-  a.close-link
-    background: url(../images/close.png) top left no-repeat
-    height: 36px
-    width: 36px
-    position: absolute
-    top: -10px
-    right: -15px
-    text-indent: -9999em
-
-  &.small
-    width: auto
-    margin: 0
+    margin: 20px auto 0
+    width: 100%
+    padding: 3px 10px 4px 10px
+    height: 30px
+    position: relative
+    +border-radius($roundness)
+    +gradient(lighten($color, 10%), darken($color, 10%))
+    +float-clear()
 
     h3
-      font-size: 16px
-      height: 24px
-      padding-top: 6px
-      margin: 5px 0 0 0
+        padding-left: 30px
+        color: #fff
+        margin: 0
+        text-shadow: 0px 1px 1px rgba(0,0,0,.3) 
+        float: left
+        background: url("../images/" + $icon) top left no-repeat
+        background-position: 0 2px 
 
     p
-      margin: 0
-      padding: 0 0 0 30px
+        margin: 8px 0 0 10px 
+        float: left
+        text-shadow: 0px 1px 1px rgba(0,0,0,.3) 
+        font-size: 14px
 
-  &.flat
-    background: $color
-    border: none
-    border-bottom: 4px solid darken($color, 20%)
-    +border-radius(0,0,0,0)
-    +clear-box-shadow
 
     a.close-link
-      background: none
-      top: 7px
-      right: 10px
-      text-decoration: none
-      color: #222
-      text-indent: 0 
-      width: auto
-      height: auto
+        background: url(../images/close.png) top left no-repeat
+        height: 36px
+        width: 36px
+        position: absolute
+        top: -10px
+        right: -15px
+        text-indent: -9999em
 
-      &:hover
-        color: #000
+    &.small
+        width: auto
+        margin: 0
 
-  &.light
-    background: lighten($color, 40%)
-    color: #222
-    text-shadow: none
+        h3
+            font-size: 16px
+            height: 24px
+            padding-top: 6px
+            margin: 5px 0 0 0
 
-    h3
-      color: #222
-      text-shadow: none
+        p
+            margin: 0
+            padding: 0 0 0 30px
+
+    &.flat
+        background: $color
+        border: none
+        border-bottom: 4px solid darken($color, 20%)
+        +border-radius(0,0,0,0)
+        +clear-box-shadow
+
+        a.close-link
+            background: none
+            top: 7px
+            right: 10px
+            text-decoration: none
+            color: #222
+            text-indent: 0 
+            width: auto
+            height: auto
+
+            &:hover
+                color: #000
+
+        &.light
+            background: lighten($color, 40%)
+            color: #222
+            text-shadow: none
+
+            h3
+                color: #222
+                text-shadow: none
 
 .notification
-  &.success
-    +notification($green, "check.png")
+    &.success
+        +notification($green, "check.png")
 
-  &.error
-    +notification($red, "error.png")
+    &.error
+        +notification($red, "error.png")
 
-  &.warning
-    +notification($yellow, "warning.png")
+    &.warning
+        +notification($yellow, "warning.png")
 
 = gradient-box($base-color: $green)
-  :color #fff
-  :font-size 18px
-  :text-shadow 0 -1px 1px rgba(0,0,0,.4)
-  :padding 8px 8px
-  :display inline-block
-  :zoom 1
-  :*display inline
-  :border 1px solid rgba(0,0,0,.74)
-  :text-align center
-  :margin-right 10px
-  :min-width 120px
-  :background-color $base-color
-  +border-radius(4px)
-  +ie-gradient(#0092ae, #00728d)
-  +gradient($base-color, darken($base-color, 10%))
-  +box-shadow(inset 0 1px 0 rgba(255,255,255,0.4))
-
-  &.striped
-    +striped-gradient($base-color, darken($base-color, 10%))
-
-  h3
     :color #fff
-    :font-size 52px
-    :margin 0
-    :text-shadow 0 -2px 1px rgba(0,0,0,.6)
-
-  small
-    :font-weight normal
-    :color #282828
     :font-size 18px
-    :text-shadow 0 1px 0 rgba(255,255,255,0.3)
+    :text-shadow 0 -1px 1px rgba(0,0,0,.4)
+    :padding 8px 8px
+    :display inline-block
+    :zoom 1
+    :*display inline
+    :border 1px solid rgba(0,0,0,.74)
+    :text-align center
+    :margin-right 10px
+    :min-width 120px
+    :background-color $base-color
+    +border-radius(4px)
+    +ie-gradient(#0092ae, #00728d)
+    +gradient($base-color, darken($base-color, 10%))
+    +box-shadow(inset 0 1px 0 rgba(255,255,255,0.4))
+
+    &.striped
+        +striped-gradient($base-color, darken($base-color, 10%))
+
+    h3
+        :color #fff
+        :font-size 52px
+        :margin 0
+        :text-shadow 0 -2px 1px rgba(0,0,0,.6)
+
+    small
+        :font-weight normal
+        :color #282828
+        :font-size 18px
+        :text-shadow 0 1px 0 rgba(255,255,255,0.3)
 
 .gradient-box.green
-  +gradient-box($green)
+    +gradient-box($green)
 
 .gradient-box.blue
-  +gradient-box($blue)
+    +gradient-box($blue)
 
 .gradient-box.red
-  +gradient-box($red)
+    +gradient-box($red)
 
 .gradient-box.purple
-  +gradient-box($purple)
+    +gradient-box($purple)
 
 .gradient-box.gray
-  +gradient-box($gray)
+    +gradient-box($gray)
 
 .gradient-box.dark-gray
-  +gradient-box($dark-gray)
+    +gradient-box($dark-gray)
 $default-search-roundness: 2px
 $dark-icon: "search-dark.png"
 $light-icon: "search-light.png"
 
 = search-box($roundness: $default-search-roundness, $icon-color: transparent, $icon: $dark-icon, $text-color: #fff)
-  position: relative
-  width: 200px
-  min-height: 35px
-  margin: 5px 0 5px
-  background-color: $dark-gray
-  +box-shadow(inset 0 2px 2px rgba(0,0,0,.4), inset 0 -1px 0 rgba(255,255,255,0.1))
-  +border-radius($roundness)
+    position: relative
+    width: 200px
+    min-height: 35px
+    margin: 5px 0 5px
+    background-color: $dark-gray
+    +box-shadow(inset 0 2px 2px rgba(0,0,0,.4), inset 0 -1px 0 rgba(255,255,255,0.1))
+    +border-radius($roundness)
 
-  .icon
-    +border-radius(0, $roundness, $roundness, 0)
-    position: absolute
-    right: 3px 
-    top: 3px 
-    width: 26px
-    height: 27px
-    padding: 5px
-    background: url("../images/" + $icon) no-repeat 5px 5px $icon-color
-    display: block
-    border: none
-    cursor: pointer
+    .icon
+        +border-radius(0, $roundness, $roundness, 0)
+        position: absolute
+        right: 3px 
+        top: 3px 
+        width: 26px
+        height: 27px
+        padding: 5px
+        background: url("../images/" + $icon) no-repeat 5px 5px $icon-color
+        display: block
+        border: none
+        cursor: pointer
 
-  input
-    width: 100%
-    height: 35px 
-    background: transparent
-    padding-left: 10px
-    line-height: 40px
-    outline: none
-    border: none
-    color: $text-color
+    input
+        width: 100%
+        height: 35px 
+        background: transparent
+        padding-left: 10px
+        line-height: 40px
+        outline: none
+        border: none
+        color: $text-color
 
 
 .search
-  &.dark
-    +search-box($default-search-roundness, transparent, $dark-icon)
+    &.dark
+        +search-box($default-search-roundness, transparent, $dark-icon)
 
-  &.light
-    +search-box($default-search-roundness, transparent, $dark-icon, #333)
+    &.light
+        +search-box($default-search-roundness, transparent, $dark-icon, #333)
     background-color: $light-gray
 
-  &.rounded
-    +border-radius($default-search-roundness + 20px)
+    &.rounded
+        +border-radius($default-search-roundness + 20px)
 
-  &.left
-    .icon 
-      right: auto
-      left: 3px 
-      +border-radius($default-search-roundness, 0, 0, $default-search-roundness)
-    input
-      padding-left: 40px
+    &.left
+        .icon 
+            right: auto
+            left: 3px 
+            +border-radius($default-search-roundness, 0, 0, $default-search-roundness)
+        input
+            padding-left: 40px
 
 $progress-roundness: 20px
 
 = progress-bar($color)
-  height: 30px
-  margin: 5px 0
-  border: 1px solid rgba(0,0,0,.2)
-  border-bottom: 1px solid rgba(255,255,255,0.1)
-  +gradient(rgba(0,0,0,.4), rgba(0,0,0,.2))
-  +border-radius($progress-roundness)
-
-  .progress-value
-    :display block
-    :position relative
-    :height 100%
-    :border-top 1px solid rgba(255,255,255,0.4)
+    height: 30px
+    margin: 5px 0
+    border: 1px solid rgba(0,0,0,.2)
+    border-bottom: 1px solid rgba(255,255,255,0.1)
+    +gradient(rgba(0,0,0,.4), rgba(0,0,0,.2))
     +border-radius($progress-roundness)
-    +box-shadow(inset 0 -3px 10px rgba(0,0,0,.4))
-    +gradient(lighten($color, 10%), $color)
 
-    .label
-      :display block
-      :position absolute
-      :right 10px 
-      :top 6px
-      :font-size 14px
-      :text-shadow 0 1px 0 rgba(0,0,0,.3)
-      :color #fff
-
-  &.striped
     .progress-value
-      +striped-gradient(lighten($color, 10%), $color)
+        :display block
+        :position relative
+        :height 100%
+        :border-top 1px solid rgba(255,255,255,0.4)
+        +border-radius($progress-roundness)
+        +box-shadow(inset 0 -3px 10px rgba(0,0,0,.4))
+        +gradient(lighten($color, 10%), $color)
+
+        .label
+            :display block
+            :position absolute
+            :right 10px 
+            :top 6px
+            :font-size 14px
+            :text-shadow 0 1px 0 rgba(0,0,0,.3)
+            :color #fff
+
+    &.striped
+        .progress-value
+            +striped-gradient(lighten($color, 10%), $color)
 
 .progress.green
-  +progress-bar($green)
+    +progress-bar($green)
 
 .progress.blue
-  +progress-bar($blue)
+    +progress-bar($blue)
 
 .progress.red
-  +progress-bar($red)
+    +progress-bar($red)
 
 .progress.purple
-  +progress-bar($purple)
+    +progress-bar($purple)
 
 

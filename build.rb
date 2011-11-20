@@ -1,8 +1,9 @@
-require 'rubygems'
-require 'dependence'
+#!/usr/bin/ruby
 
-# Concatenates all the sass files into a single one
-resolver = DependencyResolver.new(["lib/pretty-pieces.sass"], "lib") 
+require "rubygems"
+require "dependence"
+
+resolver = DependencyResolver.new(["lib/pretty-pieces.sass"],"lib") 
 files = resolver.sorted_files
 
 puts files
